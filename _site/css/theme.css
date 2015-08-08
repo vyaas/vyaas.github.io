@@ -1,6 +1,7 @@
 body {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #b0c4de;
 }
 
 .copyright {
@@ -50,9 +51,3 @@ body {
     color: #ee4444;
 }
 
-{% for c in site.colors %}
-.border-{{c[0]}} { border-color: {{ c[1] }} !important; }
-.text-{{c[0]}}   { color: {{ c[1] }}; }
-.text-{{c[0]}} a { color: {{ c[1] }}; }
-.bg-{{c[0]}}     { background-color: {{ c[1] }} !important; }
-{% endfor %}
