@@ -1,7 +1,6 @@
 body {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #b0c4de;
 }
 
 .copyright {
@@ -41,6 +40,7 @@ body {
 .well h1 {
     color: #ee4444;
     font-size: 1.3em;
+    background-color: #b0c4de;
 }
 
 .author {
