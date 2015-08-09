@@ -13,7 +13,7 @@ highlighter: rouge
 permalink: /articles/:short_year/:title
 timezone: America/Los_Angeles
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['Rakefile', 'README.md']
 post:
   template: _post.txt
   extension: md
