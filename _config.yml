@@ -1,40 +1,30 @@
-# Jekyll configuration
-
-name: Trial Blog
-description: Using a jekyll theme
-
-# url is currently only used only for the RSS feed in feed.xml
-url: http://vyaas.github.io
-
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
-#baseurl: /jekyll-clean
-baseurl: ''
-
-# This can be '' to hide the Github nav button
-#github: 'scotte/jekyll-clean'
-github: ''
-
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
-
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: ''
-comments: true
-
-permalink: /:year/:month/:title
-paginate: 3
-
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-
-exclude: ['README.md', 'LICENSE']
-
-### template colors, used site-wide via css ###
-
+baseurl: / 
+title: Analytic Cravings
+subtitle: Amusements and Abusements of Theory
+author: Vyaas Gururajan
+simple_search: http://google.com/search
+description: A Jekyll theme for content-rich sites
+name: tufte
+markdown: Kramdown
+kramdown:  
+  input: GFM
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+permalink: /articles/:short_year/:title
+timezone: America/Los_Angeles
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: vim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/clayh53.github.com/

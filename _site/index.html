@@ -1,99 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Trial Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/theme.css" rel="stylesheet">
+  <title>Tufte</title>
+  <meta name="description" content="A Jekyll theme for content-rich sites">
+
+
+  <link rel="stylesheet" href="//css/tufte.css">	
+  
+
+  <!-- Google Fonts loaded here -->
+  <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="canonical" href="//">
+  <link rel="alternate" type="application/rss+xml" title="Analytic Cravings" href="//feed.xml" />
 </head>
 
-<body>
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+		<a href="/"><img class="badge" src="/assets/img/quilt.gif" alt="CH"></a>
+		<a href="/page">A Page</a>
+		<a href="/about">About</a>
+	</nav>
+</header>
 
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Trial Blog</a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
-                    <li class="active"><a href="/archive.html">Archive</a></li>
-                    <li class="active"><a href="/about.html">About</a></li>
-                    <li class="active"><a href="/feed.xml">RSS</a></li>
-                    
-                </ul>
-              </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container container-left">
-    <div class="row">
-        <div class="col-md-3 hidden-xs">
-            <div class="sidebar well">
-Using a jekyll theme
-</div>
-
-<div class="sidebar well">
-    <h1>Recent Posts</h1>
-    <ul>
-        
-    </ul>
-</div>
-
-<div class="sidebar well">
-<h1>Links</h1>
-<ul>
-  <li><a href="#">One</a></li>
-  <li><a href="#">Two</a></li>
-  <li><a href="#">Three</a></li>
-  <li><a href="#">Four</a></li>
-</ul>
+    <article>
+        <h1 class="content-listing-header ">Analytic Cravings</h1>
+  <ul class="content">
+    
+      <li class="listing">
+      	<hr class="slender">
+      	<a href="/articles/15/trial"><h4 class="contrast">Trial!</h4></a>
+      	<span class="smaller">August 8, 2015</span>  <br/>
+		<div><p>Does this work?</p>
 
 </div>
+		
+      </li>
+    
+      <li class="listing">
+      	<hr class="slender">
+      	<a href="/articles/15/tufte-style-jekyll-blog"><h4 class="contrast">Tufte-style Jekyll blog</h4></a>
+      	<span class="smaller">February 19, 2015</span>  <br/>
+		<div><h2 id="introduction">Introduction</h2>
 
-        </div>
-        <div class="col-md-9">
-            
+<p><span class="newthought">The Tufte Jekyll theme</span>  is an attempt to create a website design with the look and feel of Edward Tufte’s books and handouts. Tufte’s style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography.</p>
 
-<div class="pagination">
-  
-  <span class="page_number ">Page:  of </span>
-  
 </div>
+		
+      </li>
+    
+      <li class="listing">
+      	<hr class="slender">
+      	<a href="/articles/15/welcome-to-jekyll"><h4 class="contrast">Welcome to Jekyll!</h4></a>
+      	<span class="smaller">February 8, 2015</span>  <br/>
+		<div><p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!<br />
+To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.=]</p>
 
-        </div>
-    </div>
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll’s GitHub repo</a>.</p>
+
 </div>
+		
+      </li>
+    
+  </ul>
 
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
-            <p class="copyright">&copy;2015 Trial Blog. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
-            under
-            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-</body>
+    </article>
+    <span class="print-footer">Tufte - Vyaas Gururajan</span>
+    <footer>
+  <ul class="footer-links group">
+    <li><a href="mailto:hate@spam.net"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//plus.google.com/+VyaasGururajan"><span class="icon-googleplus"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2015 &nbsp;&nbsp;VYAAS GURURAJAN</span></br> 
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Amusements and Abusements of Theory </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
 </html>
-

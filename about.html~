@@ -1,9 +1,0 @@
----
-layout: default
-bg : black
----
-
-<div class="well">
-    <h1>About me</h1>
-    <p>Trying out Jekyll..</p>
-</div>
