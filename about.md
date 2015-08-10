@@ -51,7 +51,7 @@ $$ L' \frac{dt'}{dt} - L = \epsilon\frac{dF}{dt} + O(\epsilon^s),$$ where \\( s\
 	<p style="font-style: italic">
 		All comments are held for moderation; basic HTML formatting accepted.
 	</p>
-	<form id="commentform" method="POST" action="{{ site.baseurl }}commentsubmit.php">
+	<form id="commentform" method="POST" action="{{ site.url }}commentsubmit.php">
 		<input type="hidden" name="post_id" value="{{page.id}}" />
 		<input type="hidden" name="return_url" value="{{site.url}}{{page.url}}" />
 		<table>
