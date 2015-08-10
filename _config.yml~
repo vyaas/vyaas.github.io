@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            Analytic Cravings
 tagline:          Black Theme for Jekyll
 description:      "Amusements and Abusements of Theory"
-url:              https://github.com/karloespiritu/blackdoc
+url:              https://github.com/vyaas/vyaas.github.io
 baseurl:          /
 
 author:
