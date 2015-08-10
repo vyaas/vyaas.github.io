@@ -409,3 +409,9 @@ a.sidebar-nav-item:focus {
   background:#7d7d7d;
 }
 
+.equation {
+    padding-bottom:  1rem;
+    padding-top:     1rem;
+    text-align:      center;
+    font-size:       1.5em;
+}
