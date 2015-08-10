@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Analytic Cravings</title>
+    <title>Tufte</title>
     <description>A Jekyll theme for content-rich sites</description>
-    <link>//</link>
-    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Aug 2015 12:14:01 -0700</pubDate>
-    <lastBuildDate>Sun, 09 Aug 2015 12:14:01 -0700</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 10 Aug 2015 02:12:52 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Aug 2015 02:12:52 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>Trial!</title>
-        <description>&lt;p&gt;Does this work?&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 08 Aug 2015 00:00:00 -0700</pubDate>
-        <link>//articles/15/trial</link>
-        <guid isPermaLink="true">//articles/15/trial</guid>
-        
-        
-      </item>
     
       <item>
         <title>Tufte-style Jekyll blog</title>
@@ -268,9 +256,9 @@ Liquid::Template.register_tag(&#39;fullwidth&#39;, Jekyll::RenderFullWidthTag)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For some reason, the &lt;em&gt;linenos&lt;/em&gt; tag modifier in the highlight tag totally screws up the code alignment, and I don’t feel like sorting it out at the moment. So either don’t use it, or figure it out and tell me what is going on so I can fix it.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 Feb 2015 13:46:04 -0800</pubDate>
-        <link>//articles/15/tufte-style-jekyll-blog</link>
-        <guid isPermaLink="true">//articles/15/tufte-style-jekyll-blog</guid>
+        <pubDate>Thu, 19 Feb 2015 16:46:04 -0500</pubDate>
+        <link>/articles/15/tufte-style-jekyll-blog</link>
+        <guid isPermaLink="true">/articles/15/tufte-style-jekyll-blog</guid>
         
         
         <category>jekyll</category>
@@ -295,9 +283,9 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 08 Feb 2015 05:06:04 -0800</pubDate>
-        <link>//articles/15/welcome-to-jekyll</link>
-        <guid isPermaLink="true">//articles/15/welcome-to-jekyll</guid>
+        <pubDate>Sun, 08 Feb 2015 08:06:04 -0500</pubDate>
+        <link>/articles/15/welcome-to-jekyll</link>
+        <guid isPermaLink="true">/articles/15/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
