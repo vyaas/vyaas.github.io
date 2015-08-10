@@ -3,11 +3,22 @@
   <channel>
     <title>Tufte</title>
     <description>A Jekyll theme for content-rich sites</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Aug 2015 02:12:52 -0400</pubDate>
-    <lastBuildDate>Mon, 10 Aug 2015 02:12:52 -0400</lastBuildDate>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 10 Aug 2015 02:39:05 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Aug 2015 02:39:05 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>trial</title>
+        <description>
+</description>
+        <pubDate>Sun, 09 Aug 2015 00:00:00 -0400</pubDate>
+        <link>//articles/15/trial</link>
+        <guid isPermaLink="true">//articles/15/trial</guid>
+        
+        
+      </item>
     
       <item>
         <title>Tufte-style Jekyll blog</title>
@@ -257,8 +268,8 @@ Liquid::Template.register_tag(&#39;fullwidth&#39;, Jekyll::RenderFullWidthTag)
 &lt;p&gt;For some reason, the &lt;em&gt;linenos&lt;/em&gt; tag modifier in the highlight tag totally screws up the code alignment, and I don’t feel like sorting it out at the moment. So either don’t use it, or figure it out and tell me what is going on so I can fix it.&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Feb 2015 16:46:04 -0500</pubDate>
-        <link>/articles/15/tufte-style-jekyll-blog</link>
-        <guid isPermaLink="true">/articles/15/tufte-style-jekyll-blog</guid>
+        <link>//articles/15/tufte-style-jekyll-blog</link>
+        <guid isPermaLink="true">//articles/15/tufte-style-jekyll-blog</guid>
         
         
         <category>jekyll</category>
@@ -284,8 +295,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Sun, 08 Feb 2015 08:06:04 -0500</pubDate>
-        <link>/articles/15/welcome-to-jekyll</link>
-        <guid isPermaLink="true">/articles/15/welcome-to-jekyll</guid>
+        <link>//articles/15/welcome-to-jekyll</link>
+        <guid isPermaLink="true">//articles/15/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>

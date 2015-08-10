@@ -27,4 +27,4 @@ transfer:
   command: rsync
   settings: -av
   source: _site/
-  destination: ~/Git/clayh53.github.com/
+  destination: ~/Git/vyaas.github.io/
