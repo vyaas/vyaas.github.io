@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Analytic Cravings</title>
- <link href="https://github.com/karloespiritu/blackdoc/atom.xml" rel="self"/>
- <link href="https://github.com/karloespiritu/blackdoc/"/>
- <updated>2015-08-10T16:42:36-07:00</updated>
- <id>https://github.com/karloespiritu/blackdoc</id>
+ <link href="https://github.com/vyaas/vyaas.github.io/atom.xml" rel="self"/>
+ <link href="https://github.com/vyaas/vyaas.github.io/"/>
+ <updated>2015-08-10T16:45:07-07:00</updated>
+ <id>https://github.com/vyaas/vyaas.github.io</id>
  <author>
    <name>Vyaas Gururajan</name>
    <email></email>
