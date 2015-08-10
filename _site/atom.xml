@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>BlackDoc</title>
+ <title>Analytic Cravings</title>
  <link href="https://github.com/karloespiritu/blackdoc/atom.xml" rel="self"/>
  <link href="https://github.com/karloespiritu/blackdoc/"/>
- <updated>2015-08-10T02:18:17-07:00</updated>
+ <updated>2015-08-10T02:21:21-07:00</updated>
  <id>https://github.com/karloespiritu/blackdoc</id>
  <author>
    <name>Karlo Espiritu</name>
