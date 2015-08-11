@@ -53,7 +53,7 @@ $$ L' \frac{dt'}{dt} - L = \epsilon\frac{dF}{dt} + O(\epsilon^s),$$ where \\( s\
 	</p>
 	<form id="commentform" method="POST" action="{{ site.url }}/commentsubmit.php">
 		<input type="hidden" name="post_id" value="{{page.id}}" />
-		<input type="hidden" name="return_url" value="{{site.url}}{{page.url}}" />
+		<input type="hidden" name="return_url" value="{{site.url}}/{{page.url}}" />
 		<table>
 			<tr>
 				<th>Name:</th>
