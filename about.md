@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: About the site's writer
 ---
 
 **Name:** Vyaas Gururajan
 
-**Occupation:** Perishing PhD Student
+**Occupation:** Perishing PhD Student.
 
 **Preoccupation:** Pondering lifestyle choices in light of the amazing descriptions of Nature proffered by Boltzmann, Einstein, and Feynman, the detailed and prophetic exposition of Capital by Karl Marx, the soulful renditions of Jazz by Bill Evans, the method of electro-shock-therapy-through-comedy pioneered by George Carlin, the disturbing-of-comfortable-and-comforting-of-disturbed agenda of humanistic literature exemplified by David Foster Wallace, the Kantian directions inscribed by Richard Stallman on our collective moral compass, and the enigmatic effectiveness and spellbinding metaphysical sanctuary provided by Mathematics.
 
