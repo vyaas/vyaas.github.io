@@ -1,4 +1,0 @@
-$$ t' = r +\epsilon\tau + ..., $$
-$$ q^{\mu'}  = q^{\mu} + \epsilon\zeta^\mu + ... $$
-$$ L' \frac{dt'}{dt} - L = \epsilon\frac{dF}{dt} + O(\epsilon^s),$$ where \\( s\gt 1 \\), 
-

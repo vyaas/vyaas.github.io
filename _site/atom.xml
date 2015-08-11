@@ -4,13 +4,42 @@
  <title>Analytic Cravings</title>
  <link href="https://vyaas.github.io/atom.xml" rel="self"/>
  <link href="https://vyaas.github.io/"/>
- <updated>2015-08-10T17:04:41-07:00</updated>
+ <updated>2015-08-11T01:13:53-07:00</updated>
  <id>https://vyaas.github.io</id>
  <author>
    <name>Vyaas Gururajan</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Trial!</title>
+   <link href="https://vyaas.github.io/2015/08/08/trial/"/>
+   <updated>2015-08-08T00:00:00-07:00</updated>
+   <id>https://vyaas.github.io/2015/08/08/trial</id>
+   <content type="html">&lt;p&gt;Does this work?&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Well then? Are you appearing?&lt;/p&gt;
+
+&lt;form action=&quot;http://pooleapp.com/stash/df2ec1e5-962d-405e-bdf1-01a85053d3b7/&quot; method=&quot;post&quot;&gt;
+  &lt;h2&gt;Leave your comment:&lt;/h2&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;redirect_to&quot; value=&quot;{YOUR-THANKS-PAGE}&quot; /&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;path&quot; value=&quot;/2015/08/08/trial/&quot; /&gt;
+  &lt;label for=&quot;name&quot;&gt;Your name&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/label&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&amp;nbsp;(Required)&lt;br&gt;
+
+  &lt;label for=&quot;email&quot;&gt;Your email&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&amp;nbsp;(Required, but not published)&lt;br&gt;
+
+  &lt;label for=&quot;website&quot;&gt;Your website&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&amp;nbsp;(Optional)&lt;br&gt;&lt;br&gt;
+
+  &lt;label for=&quot;comment&quot;&gt;Your comment (will appear after review)&lt;br&gt;&lt;/label&gt;&lt;textarea name=&quot;comment&quot; class=&quot;comment-text&quot; rows=&quot;6&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;&lt;br&gt;
+
+  &lt;input type=&quot;submit&quot; value=&quot;Post comment&quot; class=&quot;submit&quot; /&gt;&lt;br&gt;
+
+&lt;/form&gt;
+</content>
+ </entry>
  
 
 </feed>

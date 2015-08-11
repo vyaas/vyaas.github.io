@@ -12,6 +12,7 @@ tagline:          Black Theme for Jekyll
 description:      "Amusements and Abusements of Theory"
 url:              https://vyaas.github.io
 baseurl:          /
+excerpt_spearator: <!--more-->
 
 author:
   name:           'Vyaas Gururajan'

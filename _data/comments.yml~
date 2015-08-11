@@ -1,0 +1,46 @@
+sessions:
+- _id: NzYzMjY=
+  comment: Hey there fella? How&#39;s the blogging coming along?
+  created: 2015-08-11 06:31:30.871009+00:00
+  email: archaeopteryx87.blogspot.com
+  name: Vyaas
+  path: ''
+- _id: NzYzMjU=
+  comment: hey
+  created: 2015-08-11 06:28:28.767905+00:00
+  email: ''
+  name: vyaas
+  path: /2015/08/08/trial/
+- _id: NzYzMjQ=
+  comment: hey!
+  created: 2015-08-11 06:27:12.277751+00:00
+  email: ''
+  name: vyaas
+  path: '{page.url}'
+- _id: NzYzMjM=
+  comment: display now!
+  created: 2015-08-11 06:25:57.643835+00:00
+  email: ''
+  name: Vyaas
+  path: '{page.url}'
+- _id: NzYzMjI=
+  comment: "hello is there anybody in there?\r\n"
+  created: 2015-08-11 06:18:44.478916+00:00
+  email: ''
+  name: Vyaas
+- _id: NzYzMjE=
+  comment: please please please.
+  created: 2015-08-11 06:13:28.183901+00:00
+  email: archaeopteryx87.blogspot.com
+  name: Vyaas
+  path: /blog/adding-a-static-comments-system-to-my-jekyll-build
+- _id: NzYzMjA=
+  comment: Is this working?
+  created: 2015-08-11 06:11:56.041070+00:00
+  email: ''
+  name: Vyaas
+  path: /blog/adding-a-static-comments-system-to-my-jekyll-build
+- _id: NzYzMDY=
+  created: 2015-08-11 01:18:01.806234+00:00
+  '{comment}': "At W3Schools you will find \r\nfree Web-building tutorials.\r\n"
+  '{email-id}': ''
