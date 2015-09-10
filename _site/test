@@ -1,0 +1,22 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+
+If the functional
+
+$$ J  = \int_a^b L(t,q^\mu,\dot{q^\mu})dt $$
+
+is an extremal, and if under the infinitesimal transformation
+
+$$ t' = r +\epsilon\tau + ..., $$
+$$ q^{\mu'}  = q^{\mu} + \epsilon\zeta^\mu + ... $$
+
+the functional is invariant according to the definition (following the inhomogeneous case)
+$$ L' \frac{dt'}{dt} - L = \epsilon\frac{dF}{dt} + O(\epsilon^s),$$ where ( s < 1 ), 
+then the following conservation law holds:
+$$ p_\mu \zeta^\mu - H\tau - F = const. $$
+
+This is Noether's theorem, arguably the sexiest in all of Physics! In English words, it says this:
+When you can write an extremum principle, like the principle of least action, for some phenomenon in Nature, and if you can locate a symmetry, like the homogeniety of space or of time, you will arrive at a conservation law, like the one for momentum or for energy. When confronted by the thought of death, I take solace in the fact that I have *at least* beheld this theorem! To catch such a panoramic glimpse of Natural Order while remaining emotionally subdued is a goddamn challenge of the highest order!
+
+
+\end{document}
