@@ -16,79 +16,37 @@ title: About the site's writer
 
 **Favorite Theorem:**
 
+If the functional
 
-<div class="ltx_page_main">
-<div class="ltx_page_content">
-<section class="ltx_document">
-<div id="p1" class="ltx_para">
-<p class="ltx_p">If the functional</p>
-</div>
-<div id="p2" class="ltx_para">
-<table id="S0.Ex1" class="ltx_equation">
+$$ J  = \int_a^b L(t,q^\mu,\dot{q^\mu})dt $$
 
-<tr class="ltx_equation ltx_align_baseline">
-<td class="ltx_eqn_pad"></td>
-<td class="ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="J=\int_{a}^{b}L(t,q^{\mu},\dot{q^{\mu}})dt" display="block"><semantics><mrow><mi>J</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>L</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>t</mi><mo>,</mo><msup><mi>q</mi><mi>μ</mi></msup><mo>,</mo><mover accent="true"><msup><mi>q</mi><mi>μ</mi></msup><mo>˙</mo></mover></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">J=\int_{a}^{b}L(t,q^{\mu},\dot{q^{\mu}})dt</annotation></semantics></math></td>
-<td class="ltx_eqn_pad"></td>
-</tr>
-</table>
-</div>
-<div id="p3" class="ltx_para">
-<p class="ltx_p">is an extremal, and if under the infinitesimal transformation</p>
-</div>
-<div id="p4" class="ltx_para">
-<table id="S0.Ex2" class="ltx_equation">
+is an extremal, and if under the infinitesimal transformation
 
-<tr class="ltx_equation ltx_align_baseline">
-<td class="ltx_eqn_pad"></td>
-<td class="ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="t^{\prime}=r+\epsilon\tau+...," display="block"><semantics><mrow><mrow><msup><mi>t</mi><mo>′</mo></msup><mo>=</mo><mrow><mi>r</mi><mo>+</mo><mrow><mi>ϵ</mi><mo>⁢</mo><mi>τ</mi></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">t^{\prime}=r+\epsilon\tau+...,</annotation></semantics></math></td>
-<td class="ltx_eqn_pad"></td>
-</tr>
-</table>
-<table id="S0.Ex3" class="ltx_equation">
+$$ t' = r +\epsilon\tau + ..., $$
+$$ q^{\mu'}  = q^{\mu} + \epsilon\zeta^\mu + ... $$
 
-<tr class="ltx_equation ltx_align_baseline">
-<td class="ltx_eqn_pad"></td>
-<td class="ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="q^{\mu^{\prime}}=q^{\mu}+\epsilon\zeta^{\mu}+..." display="block"><semantics><mrow><msup><mi>q</mi><msup><mi>μ</mi><mo>′</mo></msup></msup><mo>=</mo><mrow><msup><mi>q</mi><mi>μ</mi></msup><mo>+</mo><mrow><mi>ϵ</mi><mo>⁢</mo><msup><mi>ζ</mi><mi>μ</mi></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">q^{\mu^{\prime}}=q^{\mu}+\epsilon\zeta^{\mu}+...</annotation></semantics></math></td>
-<td class="ltx_eqn_pad"></td>
-</tr>
-</table>
-</div>
-<div id="p5" class="ltx_para">
-<p class="ltx_p">the functional is invariant according to the definition (following the inhomogeneous case)</p>
-<table id="S0.Ex4" class="ltx_equation">
+the functional is invariant according to the definition (following the inhomogeneous case)
+$$ L' \frac{dt'}{dt} - L = \epsilon\frac{dF}{dt} + O(\epsilon^s),$$ where ( s < 1 ), 
+then the following conservation law holds:
+$$ p{\_\mu}\zeta{^\mu} - H\tau - F = const. $$
 
-<tr class="ltx_equation ltx_align_baseline">
-<td class="ltx_eqn_pad"></td>
-<td class="ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="L^{\prime}\frac{dt^{\prime}}{dt}-L=\epsilon\frac{dF}{dt}+O(\epsilon^{s})," display="block"><semantics><mrow><mrow><mrow><mrow><msup><mi>L</mi><mo>′</mo></msup><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><msup><mi>t</mi><mo>′</mo></msup></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>-</mo><mi>L</mi></mrow><mo>=</mo><mrow><mrow><mi>ϵ</mi><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>F</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><msup><mi>ϵ</mi><mi>s</mi></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">L^{\prime}\frac{dt^{\prime}}{dt}-L=\epsilon\frac{dF}{dt}+O(\epsilon^{s}),</annotation></semantics></math></td>
-<td class="ltx_eqn_pad"></td>
-</tr>
-</table>
-<p class="ltx_p">where ( s < 1 ),
-then the following conservation law holds:</p>
-<table id="S0.Ex5" class="ltx_equation">
-
-<tr class="ltx_equation ltx_align_baseline">
-<td class="ltx_eqn_pad"></td>
-<td class="ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="p_{\mu}\zeta^{\mu}-H\tau-F=const." display="block"><semantics><mrow><mrow><mrow><mrow><msub><mi>p</mi><mi>μ</mi></msub><mo>⁢</mo><msup><mi>ζ</mi><mi>μ</mi></msup></mrow><mo>-</mo><mrow><mi>H</mi><mo>⁢</mo><mi>τ</mi></mrow><mo>-</mo><mi>F</mi></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>.</mo></mrow><annotation encoding="application/x-tex">p_{\mu}\zeta^{\mu}-H\tau-F=const.</annotation></semantics></math></td>
-<td class="ltx_eqn_pad"></td>
-</tr>
-</table>
-</div>
-<div id="p6" class="ltx_para">
-<p class="ltx_p">This is Noether’s theorem, arguably the sexiest in all of Physics! In English words, it says this:
-When you can write an extremum principle, like the principle of least action, for some phenomenon in Nature, and if you can locate a symmetry, like the homogeniety of space or of time, you will arrive at a conservation law, like the one for momentum or for energy. When confronted by the thought of death, I take solace in the fact that I have *at least* beheld this theorem! To catch such a panoramic glimpse of Natural Order while remaining emotionally subdued is a goddamn challenge of the highest order!</p>
-</div>
-</section>
-</div>
-
+This is Noether's theorem, arguably the sexiest in all of Physics! In English words, it says this:
+When you can write an extremum principle, like the principle of least action, for some phenomenon in Nature, and if you can locate a symmetry, like the homogeniety of space or of time, you will arrive at a conservation law, like the one for momentum or for energy. When confronted by the thought of death, I take solace in the fact that I have *at least* beheld this theorem! To catch such a panoramic glimpse of Natural Order while remaining emotionally subdued is a goddamn challenge of the highest order!
 
 [^1]: The relationship of the note to the song, the citizen to the society, the cog to the machine, the axiom to the theorem, the word to the poem, and all such constitutions evokes a sort of universal wonderment. In Physics, this tension between the part and the whole is exemplified no better than the study of thermodynamics. In it throbs a tension; that between the descriptions of part and whole, each of which are empirically verifiable in isolation via micro and macroscopic theories (often to incredible success), but their connection, which is necessarily grounded in probability calculus, has given rise to a gallery of interpretations, each with its philosophical basis and niggling discontents. Boltzmann pioneered this line of inquiry. Today, thanks to him, we are in a position to articulate the question of life itself being derivable from underlying principles of Physics. See [Boltzmann's Work in Statistical Physics.](http://plato.stanford.edu/entries/statphys-Boltzmann/)
 
-[^2]: Einstein's invitation to reconsider what we mean when we utter concepts related to time transcends its subject matter; it will remain timeless! When I first read the following lines, I knew I had *experienced* unadulterated genius: *"Let us take a system of coordinates in which the equations of Newtonian mechanics hold good. In order to render our presentation more precise and to distinguish this system of co-ordinates verbally from others which will be introduced hereafter, we call it the “stationary system.” If a material point is at rest relatively to this system of co-ordinates, its position can be defined relatively thereto by the employment of rigid standards of measurement and the methods of Euclidean geometry, and can be expressed in Cartesian co-ordinates. If we wish to describe the motion of a material point, we give the values of its coordinates as functions of the time. Now we must bear carefully in mind that a mathematical description of this kind has no physical meaning unless we are quite clear as to what we understand by “time.” We have to take into account that all our judgments in which time plays a part are always judgments of simultaneous events. If, for instance, I say, “That train arrives here at 7 o’clock,” I mean something like this: “The pointing of the small hand of my watch to 7 and the arrival of the train are simultaneous events.” It might appear possible to overcome all the difficulties attending the definition of “time” by substituting “the position of the small hand of my watch” for “time.” And in fact such a definition is satisfactory when we are concerned with defining a time exclusively for the place where the watch is located; but it is no longer satisfactory when we have to connect in time series of events occurring at different places, or — what comes to the same thing — to evaluate the times of events occurring at places remote from the watch."* You can almost feel his presence in the living room of your mind, gently prodding on the chinaware atop the mantel, preparing to shatter all sorts of things! Note the clarity in language, an obvious reflection of clarity in thought. All understanding can happen only after the diligent disentangling of neighboring ideas. And let no idea be considered too sacred for this! See [Einstein, A., On The Electrodynamics of Moving Bodies, 1905.](http://www.fourmilab.ch/etexts/einstein/specrel/www/)
+[^2]: Einstein's invitation to reconsider what we mean when we utter concepts related to time transcends its subject matter; it will remain timeless! I remember being utterly captivated by Einstein's revolutionary yet innocent-seeming line of reasoning upon reading the following lines for the first time: *"If we wish to describe the motion of a material point, we give the values of its coordinates as functions of the time. Now we must bear carefully in mind that a mathematical description of this kind has no physical meaning unless we are quite clear as to what we understand by “time.” We have to take into account that all our judgments in which time plays a part are always judgments of simultaneous events. If, for instance, I say, “That train arrives here at 7 o’clock,” I mean something like this: “The pointing of the small hand of my watch to 7 and the arrival of the train are simultaneous events.” It might appear possible to overcome all the difficulties attending the definition of “time” by substituting “the position of the small hand of my watch” for “time.” And in fact such a definition is satisfactory when we are concerned with defining a time exclusively for the place where the watch is located; but it is no longer satisfactory when we have to connect in time series of events occurring at different places, or — what comes to the same thing — to evaluate the times of events occurring at places remote from the watch."* You can almost feel his presence in the living room of your mind, gently prodding on the chinaware atop the mantel, preparing to shatter all sorts of things! Note the clarity in language, an obvious reflection of clarity in thought. All understanding can happen only after the diligent disentangling of neighboring ideas. And let no idea be considered too sacred for this! See [Einstein, A., On The Electrodynamics of Moving Bodies, 1905.](http://www.fourmilab.ch/etexts/einstein/specrel/www/)
 
-[^3]: 
+[^3]: If Einstein has destroyed the furniture of my mind's living room, Feynman has ripped away its curtains! Every one of [his inimitable lectures on Physics](http://www.feynmanlectures.caltech.edu/) has revealed to me yet another dimension of Beauty in our Universe. When reading him, I feel a calm enlightening. It's the sincerity in his voice; he was always asking deceptively simple questions and challenged us to do the same! And just as Boltzmann's fascination with a problem was infectious, so too was Feynman's. His work in uniting Hamilton's and Jacobi's optical interpretation of Mechanics, and Schroedinger's and deBroglie's ideas on so called Wave mechanics, by explaining both as a consequence of that enigmatic Principle of Least Action, is one of the most exciting intellectual adventures in the history of Science. His [Messenger Lectures](https://www.youtube.com/playlist?list=PLF96D8FFDDE4B9087) are a constant source of inspiration for me and countless others.
 
+[^4]: Capitalism has managed to hermetically seal itself from critical reform. We live in a world where the following questions recieve more admonition than attention: *1) Capitalism thrives on greed. Then are the culturally codified cliches on the greed-evil affiliation legit? 2) Why do we go out of our way to protect the interests of businessmen by granting them intellectual property, political power, financial clemency, and social status as role-models while poor laborers (farmers, miners, fishermen, cab drivers, mechanics, carpenters, etc.) are villified for complaining, protesting, and unionizing? Has our sense of proportion taken leave of us? 3) If Capitalism guarantees so called booms and busts, it also guarantees a never diminishing reserve army of unemployed people. This endows capitalists with the obscene power of deciding the minimum wage and ultimately the poverty line. Also, workers are disenfranchised; they can't own the fruits of their labor, the means of production, the intellectual permissions to affect change, etc.. Is Capitalism simply neo-imperialism?* The general reluctance of people to engage seriously with these questions makes me wonder if they are prescribing that bitter ignorance-is-bliss pill or simply reacting in any way fitting of someone who benefits from the tenets of Capitalism. In either case, the principles of equality and justice aren't permissive to fickle rationalizations. Our pursuit for Truth requires that we abandon to a large degree our longing to "imagine" a different fairer world. Rather, by seeing the world for what it is, i.e. letting our thoughts reflect our material surroundings and not the other way around, we will allow ourselves the objectivity to grapple with our current system of economy. It is this *materialism*, injected of course with *dialectic* i.e. the spotting of contradiction, it's informed resolution, it's resulting contradiction, and so on and so on, that is the mode of inquiry in Marx's multi-volume Capital (The first volume can be read [here](https://www.marxists.org/archive/marx/works/1867-c1/)). Marx reveals to us Capitalism's metabolism, its defense mechanisms, its religious institutionalization, and its apologist's weakest points. Maybe Communism will prove to be a tough sell (although it has never been realized the way Marx had outlined, not even closely), Marx's critique of Capitalism remains invaluable. I must direct a good deal of gratitude towards [David Harvey](http://www.versobooks.com/books/376-a-companion-to-marx-s-capital) for making Marx accessible to my generation. (Here's a [link](https://www.youtube.com/playlist?list=PL0A7FFF28B99C1303) to his video lectures.)
 
+[^5]: If Music is the language of the soul, Bill Evans embodied a beautiful soul. In my most emotionally tired moments, when the stretch marks of existence widen, I listen to the soothing [tunes](http://www.last.fm/music/Bill+Evans) of Bill Evans.
 
+[^6]: My first exposure to [George Carlin](https://georgecarlin.com/media-2/) made me go, "Wait! You can say that? You can *think* that?".
 
+[^7]: " *Maybe it's the fact the most of the arts here are produced by world-weary and sophisticated older people and then consumed by younger people who not only consume art but study it for clues on how to be cool, hip - and keep in mind that, for kids and younger people, to be hip and cool is the same as to be admired and accepted and included and so Unalone. Forget so-called peer-pressure. It's more like peer-hunger. No? We enter a spiritual puberty where we snap to the fact that the great transcendant horror is loneliness, excluded encagement in the self. Once we've hit this age, we will now give or take anything, wear any mask, to fit, be part-of, not be Alone, we young. The U.S. arts are our guide to inclusion. A how-to. We are shown how to fashion masks of ennui and jaded irony at a young age where the face is fictile enough to assume the shape of whatever it wears. And then it's stuck there, the weary cynicism that saves us from gooey sentiment and unsophisticated naivete.* " - David Foster Wallace, [Infinite Jest ](http://www.hachettebookgroup.com/titles/david-foster-wallace/infinite-jest/9780316066525/)
+
+[^8]: Most of us use computers everyday. We use it for communicating, shopping, banking, learning, etc. This is possible due to software, specifically, programs. It is not at all batshit to assume that users should control programs and not the other way around. The syllogism goes: "if programs are written by people, and these programs control the user, then effectively people control users." That a computer can automatically download software through a backdoor without a user's permission, that a user cannot modify or even inspect what a program is *really* executing, that certain hardware refuses to work unless it is fed so called *proprietary* software, that a user's data is collected and surveyed without consent, that a software patent can secure for it's owner the power to take away people's rights to discover and implement solutions to computational problems themselves (this more than anything else hurts me the most) are all examples of gross encroachments on our liberty. It is also highly undemocratic and antisocial as it disenfranchises the many and empowers the few. Free Software, Richard Stallman submits, is ethical as it empowers *all* users and promotes a culture of sharing. To say that such a world cannot exist is naked denial. The movement to develop, distribute, and curate free software (free as in *Freedom* and not free as in *free beer*), has gained critical mass! Stallman has inspired me, and many others, to take the challenging but exciting road of writing and using free software! See [The Essays of Richard Stallman (PDF)](https://www.gnu.org/philosophy/fsfs/rms-essays.pdf)
+
+[^9]: Mathematics has been our best effort in formulating a language of reasoning. That its *words* are used to describe the Natural World so effectively remains a poetic mystery. One can get carried away in this sanctuary of symbols, often forgetting what these symbols stand for. This is a trap Physicists are only too wary of. But quite often, we end up with mathematical statements of truth before understanding the meaning behind the symbols (famous examples are Maxwell's Equations, Heisenberg's uncertainty principle, the Second law of Thermodynamics). This is unlike any other language! Mathematics is indeed a metaphysically singular subject! See [Wigner, E., The Unreasonable Effectiveness of Mathematics, 1960.](http://www.dartmouth.edu/~matc/MathDrama/reading/Wigner.html)
