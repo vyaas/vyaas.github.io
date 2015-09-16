@@ -14,6 +14,9 @@ title: About the site's writer
 
 **Psychological ailment:** Currently succumbing to *Bullshit Induced Aphasia*, an apparently incurable disease wherein the subject suffers the violent disemboweling of his senses upon hearing the sophistry of fatalists and teleologists through one ear and the high pitched drone of solipsists and nihilists through the other, resulting in a mental state of spaz-unto-death. What the subject looks like on the outside can only be left to one's imagination.
 
+
+1) Usage of the word _monetize_ in any context.
+
 **Favorite Theorem:**
 
 If the functional
