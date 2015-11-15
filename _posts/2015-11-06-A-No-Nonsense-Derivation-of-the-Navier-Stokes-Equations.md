@@ -329,5 +329,5 @@ I've heard many call the NS equations ugly. I think they're particularly beautif
 
 [^3]: If you're unfamilair with index notation, I strongly insist that you learn it. Two rules to never forget:1) Conservation of indices: All free indices that appear on the left hand side must appear on the right hand side. 2) Repeated indices denote taking a product and summing over all permissable values of the index. In 2d for instance \\(a\_ib\_i = a\_1b\_1 + a\_2b\_2\\).
 
-[^4]: All this applies to Newtonian non-polar fluids. If the fluid is non-polar, there can be an internal angular momentum set up and we will need to supplement our equations with the conservation of angular momentum. The NS equations don't apply to these.
+[^4]: All this only applies to Newtonian non-polar fluids. If the fluid is non-polar, there can be an internal angular momentum set up and we will need to supplement our equations with the conservation of angular momentum. The NS equations don't apply to these.
 
