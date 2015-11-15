@@ -15,7 +15,9 @@ The roadmap for the derivation is as follows:
 
 Warning: A preliminary understanding - if not appreciation - of vector calculus, including tensors, is required to _get_ whats about to follow. Here are some resources:
 
-
+[Differential Calculus of Vector Fields](http://www.feynmanlectures.caltech.edu/II_02.html)
+[Vector Integral Calculus](http://www.feynmanlectures.caltech.edu/II_03.html)
+[Tensors](http://www.feynmanlectures.caltech.edu/II_31.html)
 
 -----------------------------------------------------------
 
