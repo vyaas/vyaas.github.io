@@ -300,7 +300,7 @@ This \\(\kappa\\) is called the bulk viscosity. It too is confined to positive v
 
 -----------------------------------------------------------
 
-We can now write the full Navier-Stokes Equations. In index notation, it is
+We can now write the full Navier-Stokes Equations. In index notation they are written as,
 
 $$ \frac{\partial(\rho u\_i)}{\partial t} + \frac{\partial(\rho u\_i u\_j)}{\partial x\_j} = \rho f\_i + \frac{\partial (T\_{ij})}{\partial x\_j} $$
 where
