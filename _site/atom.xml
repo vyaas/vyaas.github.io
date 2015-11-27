@@ -4,7 +4,7 @@
  <title>Analytic Cravings</title>
  <link href="https://vyaas.github.io/atom.xml" rel="self"/>
  <link href="https://vyaas.github.io/"/>
- <updated>2015-11-15T01:57:59-08:00</updated>
+ <updated>2015-11-27T05:52:25-08:00</updated>
  <id>https://vyaas.github.io</id>
  <author>
    <name>Vyaas Gururajan</name>
@@ -27,7 +27,13 @@
 
 &lt;p&gt;3) Develop the form of the stress tensor for a Newtonian Fluid.&lt;/p&gt;
 
-&lt;p&gt;Warning: A preliminary understanding - if not appreciation - of vector calculus, including tensors, is required to &lt;em&gt;get&lt;/em&gt; whats about to follow. Here are some resources:&lt;/p&gt;
+&lt;p&gt;Warning: A preliminary understanding - if not appreciation - of vector calculus, including tensors, is required to &lt;em&gt;get&lt;/em&gt; whats about to follow. Here are some relevant chapters from Feynman&amp;#39;s Lectures:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.feynmanlectures.caltech.edu/II_02.html&quot;&gt;Differential Calculus of Vector Fields&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.feynmanlectures.caltech.edu/II_03.html&quot;&gt;Vector Integral Calculus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.feynmanlectures.caltech.edu/II_31.html&quot;&gt;Tensors&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -55,7 +61,7 @@
 
 &lt;p&gt;$$ \vec{\xi} = \vec{\xi}(\vec{x},t) $$&lt;/p&gt;
 
-&lt;p&gt;This simply says that all initial positions of IFPs belong somewhere. The above function is also monotonic, which means that every position in space can contain only one unique IFP. Analytically, this means the transformation matrix (also called the Jacobian matrix \(\tilde{J}\)) is non-singular everywhere:&lt;/p&gt;
+&lt;p&gt;This simply says that all initial positions of IFPs belong somewhere. Remember that functions are always answers to questions. Here the question goes something like &amp;quot;which IFP is located at position \(\vec{x}\) and time \(t\)?&amp;quot;. Answer: &amp;quot;\(\vec{\xi}\)!&amp;quot; You must think of \(\vec{\xi}\) as taking on an infinite number of values! That isn&amp;#39;t a problem as long as we can associate each of these values to a position in space. Analytically, this means the transformation matrix (also called the Jacobian matrix \(\tilde{J}\)) is non-singular everywhere:&lt;/p&gt;
 
 &lt;p&gt;$$ \vec{dx} = \tilde{J}\vec{d\xi} $$&lt;/p&gt;
 
@@ -313,7 +319,7 @@ $$ b = \kappa - \frac{2}{3}\mu$$&lt;/p&gt;
 
 &lt;hr&gt;
 
-&lt;p&gt;We can now write the full Navier-Stokes Equations. In index notation, it is&lt;/p&gt;
+&lt;p&gt;We can now write the full Navier-Stokes Equations. In index notation they are written as,&lt;/p&gt;
 
 &lt;p&gt;$$ \frac{\partial(\rho u_i)}{\partial t} + \frac{\partial(\rho u_i u_j)}{\partial x_j} = \rho f_i + \frac{\partial (T_{ij})}{\partial x_j} $$
 where
@@ -341,7 +347,7 @@ where&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li id=&quot;fn2&quot;&gt;
-&lt;p&gt;Such arguments are formally made in the subject of statistical mechanics where the name of the game is to basically prove the laws of thermodynamics, those undeniable constraints on all macroscopic phenomena, by combining the properties of atoms and the laws of microscopic motion via some sexy results from probability theory.Beholding its results truly takes the breath away!&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Such arguments are formally made in the subject of statistical mechanics where the name of the game is to basically prove the laws of thermodynamics, those undeniable constraints on all macroscopic phenomena, by combining the properties of atoms and the laws of microscopic motion via some sexy results from probability theory. Beholding its results truly takes the breath away!&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li id=&quot;fn3&quot;&gt;
@@ -349,7 +355,7 @@ where&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li id=&quot;fn4&quot;&gt;
-&lt;p&gt;All this applies to Newtonian non-polar fluids. If the fluid is non-polar, there can be an internal angular momentum set up and we will need to supplement our equations with the conservation of angular momentum. The NS equations don&amp;#39;t apply to these.&amp;nbsp;&lt;a href=&quot;#fnref4&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;All this only applies to Newtonian non-polar fluids. If the fluid is non-polar, there can be an internal angular momentum set up and we will need to supplement our equations with the conservation of angular momentum. The NS equations don&amp;#39;t apply to these.&amp;nbsp;&lt;a href=&quot;#fnref4&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;/ol&gt;

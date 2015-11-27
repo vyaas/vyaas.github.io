@@ -45,7 +45,7 @@ Each IFP originates at some \\(\vec{\xi\_i}\\) where \\(i\\) can take values fro
 
 $$ \vec{\xi} = \vec{\xi}(\vec{x},t) $$
 
-This simply says that all initial positions of IFPs belong somewhere. The above function is also monotonic, which means that every position in space can contain only one unique IFP. Analytically, this means the transformation matrix (also called the Jacobian matrix \\(\tilde{J}\\)) is non-singular everywhere:
+This simply says that all initial positions of IFPs belong somewhere. Remember that functions are always answers to questions. Here the question goes something like "which IFP is located at position \\(\vec{x}\\) and time \\(t\\)?". Answer: "\\(\vec{\xi}\\)!" You must think of \\(\vec{\xi}\\) as taking on an infinite number of values! That isn't a problem as long as we can associate each of these values to a position in space. Analytically, this means the transformation matrix (also called the Jacobian matrix \\(\tilde{J}\\)) is non-singular everywhere:
 
 $$ \vec{dx} = \tilde{J}\vec{d\xi} $$
 

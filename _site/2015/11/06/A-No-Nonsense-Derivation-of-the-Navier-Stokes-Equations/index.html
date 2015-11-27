@@ -89,7 +89,13 @@
 
 <p>3) Develop the form of the stress tensor for a Newtonian Fluid.</p>
 
-<p>Warning: A preliminary understanding - if not appreciation - of vector calculus, including tensors, is required to <em>get</em> whats about to follow. Here are some resources:</p>
+<p>Warning: A preliminary understanding - if not appreciation - of vector calculus, including tensors, is required to <em>get</em> whats about to follow. Here are some relevant chapters from Feynman&#39;s Lectures:</p>
+
+<p><a href="http://www.feynmanlectures.caltech.edu/II_02.html">Differential Calculus of Vector Fields</a></p>
+
+<p><a href="http://www.feynmanlectures.caltech.edu/II_03.html">Vector Integral Calculus</a></p>
+
+<p><a href="http://www.feynmanlectures.caltech.edu/II_31.html">Tensors</a></p>
 
 <hr>
 
@@ -117,7 +123,7 @@
 
 <p>$$ \vec{\xi} = \vec{\xi}(\vec{x},t) $$</p>
 
-<p>This simply says that all initial positions of IFPs belong somewhere. The above function is also monotonic, which means that every position in space can contain only one unique IFP. Analytically, this means the transformation matrix (also called the Jacobian matrix \(\tilde{J}\)) is non-singular everywhere:</p>
+<p>This simply says that all initial positions of IFPs belong somewhere. Remember that functions are always answers to questions. Here the question goes something like &quot;which IFP is located at position \(\vec{x}\) and time \(t\)?&quot;. Answer: &quot;\(\vec{\xi}\)!&quot; You must think of \(\vec{\xi}\) as taking on an infinite number of values! That isn&#39;t a problem as long as we can associate each of these values to a position in space. Analytically, this means the transformation matrix (also called the Jacobian matrix \(\tilde{J}\)) is non-singular everywhere:</p>
 
 <p>$$ \vec{dx} = \tilde{J}\vec{d\xi} $$</p>
 
@@ -375,7 +381,7 @@ $$ b = \kappa - \frac{2}{3}\mu$$</p>
 
 <hr>
 
-<p>We can now write the full Navier-Stokes Equations. In index notation, it is</p>
+<p>We can now write the full Navier-Stokes Equations. In index notation they are written as,</p>
 
 <p>$$ \frac{\partial(\rho u_i)}{\partial t} + \frac{\partial(\rho u_i u_j)}{\partial x_j} = \rho f_i + \frac{\partial (T_{ij})}{\partial x_j} $$
 where
@@ -403,7 +409,7 @@ where</p>
 </li>
 
 <li id="fn2">
-<p>Such arguments are formally made in the subject of statistical mechanics where the name of the game is to basically prove the laws of thermodynamics, those undeniable constraints on all macroscopic phenomena, by combining the properties of atoms and the laws of microscopic motion via some sexy results from probability theory.Beholding its results truly takes the breath away!&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+<p>Such arguments are formally made in the subject of statistical mechanics where the name of the game is to basically prove the laws of thermodynamics, those undeniable constraints on all macroscopic phenomena, by combining the properties of atoms and the laws of microscopic motion via some sexy results from probability theory. Beholding its results truly takes the breath away!&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
 </li>
 
 <li id="fn3">
@@ -411,7 +417,7 @@ where</p>
 </li>
 
 <li id="fn4">
-<p>All this applies to Newtonian non-polar fluids. If the fluid is non-polar, there can be an internal angular momentum set up and we will need to supplement our equations with the conservation of angular momentum. The NS equations don&#39;t apply to these.&nbsp;<a href="#fnref4" rev="footnote">&#8617;</a></p>
+<p>All this only applies to Newtonian non-polar fluids. If the fluid is non-polar, there can be an internal angular momentum set up and we will need to supplement our equations with the conservation of angular momentum. The NS equations don&#39;t apply to these.&nbsp;<a href="#fnref4" rev="footnote">&#8617;</a></p>
 </li>
 
 </ol>
