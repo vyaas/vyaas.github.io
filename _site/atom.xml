@@ -4,7 +4,7 @@
  <title>Analytic Cravings</title>
  <link href="https://vyaas.github.io/atom.xml" rel="self"/>
  <link href="https://vyaas.github.io/"/>
- <updated>2015-11-27T05:52:25-08:00</updated>
+ <updated>2015-12-18T00:13:43-08:00</updated>
  <id>https://vyaas.github.io</id>
  <author>
    <name>Vyaas Gururajan</name>
@@ -184,9 +184,22 @@ $$             \frac{\partial\rho}{\partial t} + \nabla\cdot\rho\vec{u}  = 0 $$&
 
 &lt;p&gt;For the time-being, imagine a 2-dimensional square shaped IFP (because it&amp;#39;s easier to draw). If we cut this square across the diagonal, we have a nice right angled triangle with three edges. There is a force acting on each of these edges, but they must all add up to zero. If \(dl\) is the length of the hypotenuse, and \(dl_1\) and \(dl_2\) are the lengths of the perpendicular edges, and the force per unit length or &lt;em&gt;length&lt;/em&gt; stress is \(vec{t}\),&lt;/p&gt;
 
-&lt;p&gt;$$ \vec{t_{(n)}}dl - \vec{t_1}dl_1 - \vec{t_2}dl_2  = 0 $$&lt;/p&gt;
+&lt;p&gt;$$ \vec{t_{(n)}}dl - \vec{t_1}dl_1 - \vec{t_2}dl_2  = 0 $$
+&amp;lt;!-- _includes/image.html --&amp;gt;
+&lt;div class=&quot;image-wrapper&quot; &gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;a href=&amp;quot;http://example.com&amp;quot; title=&amp;quot;title for image&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;
 
-&lt;p&gt;Here, the signs of the forces are an artefact of the coordinate system. You should get the right signs as long as you&amp;#39;re consistent with the directions of your forces relative to the surface normals. Here, all forces are pointing outside the triangle. To be more precise, since the ratios of the the length of a perpendicular to the hypotenuse is a component of the normal vector to the hypotenuse, we can write &lt;/p&gt;
+    &amp;lt;img src=&amp;quot;https://vyaas.github.io/_assets/triangle_vectors.png&amp;quot; alt=&amp;quot;title for image&amp;quot;/&amp;gt;
+
+&amp;lt;/a&amp;gt;
+
+
+    &amp;lt;p class=&amp;quot;image-caption&amp;quot;&amp;gt;caption for image&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vyaas.github.io/assets/triangle_vectors.png&quot;&gt;My helpful screenshot&lt;/a&gt;
+Here, the signs of the forces are an artefact of the coordinate system. You should get the right signs as long as you&amp;#39;re consistent with the directions of your forces relative to the surface normals. Here, all forces are pointing outside the triangle. To be more precise, since the ratios of the the length of a perpendicular to the hypotenuse is a component of the normal vector to the hypotenuse, we can write &lt;/p&gt;
 
 &lt;p&gt;$$ \vec{t_{(n)}} = \vec{t_1}|n_1| + \vec{t_2}|n_2|  $$&lt;/p&gt;
 
