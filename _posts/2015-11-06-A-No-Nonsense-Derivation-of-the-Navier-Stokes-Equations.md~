@@ -353,7 +353,7 @@ which all follows from the same tricks we used in deriving Reynolds' Transport T
 
 Upon examining the rate of change of kinetic energy, the first term on the right hand side is the power expended by body forces, the second term denotes the power expended by internal stresses and the third term denotes the power expended by surface stresses. We can decompose the second term into power expended by _reversible_ internal stresses and power expended by _irreversible_ internal stresses:
 
-$$ \tilde{T}\:\vec{v} = P\nabla\cdot\vec{v} + \Phi $$
+$$ \tilde{T}\:\vec{v} = -P\nabla\cdot\vec{v} + \Phi $$
 
 The first term on the right hand side is the rate of change of strain energy and the second is viscous dissipation. It is this dissipation that leads to an increase in entropy of the IFP.
 
