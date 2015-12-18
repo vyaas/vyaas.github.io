@@ -65,7 +65,7 @@ $$ \psi(\vec{\xi},t) = \psi[\vec{x}(\vec{\xi},t),t] $$
 
 We're finally in a position to say what we mean by a time derivative. Let's reserve unique symbols for each case first: Let \\(\frac{d}{dt}\\) be the time derivative of a quanitity keeping \\(\vec{\xi}\\) constant. Let \\(\frac{\partial}{\partial t}\\) be the time derivative of a quanitity keeping \\(\vec{x}\\) constant.
 
-Lo and behold, the velocity of an IFP:
+Behold, the velocity of an IFP:
 
 $$ \vec{u} = \frac{d\vec{x}}{dt} $$
 
@@ -74,9 +74,6 @@ It's worth repeating what this means! By keeping \\(\vec{\xi}\\) constant while 
 Now, since we know
 $$ \psi(\vec{\xi},t) = \psi[\vec{x}(\vec{\xi},t),t] $$
 to be true, we proceed taking time derivatives as follows:
-
-$$ \frac{d\psi}{dt}(\vec{\xi},t) = \frac{\partial\psi}{\partial t}[\vec{x}(\vec{\xi},t),t] $$
-Apply the chain rule:
 $$ \frac{d\psi}{dt} = \frac{d\vec{x}}{dt}\cdot\nabla\psi+ \frac{\partial\psi}\{\partial t} $$
 $$ \frac{d\psi}{dt} = \vec{u}\cdot\nabla\psi+ \frac{\partial\psi}\{\partial t} $$
 
@@ -95,6 +92,9 @@ $$ \vec{d\xi} = \tilde{J}\vec{dx} $$
 Therefore the relationship between the old and new volumes is
 
 $$ dV = |\tilde{J}|dV\_0 $$
+
+<center><img src = "{{ site.url }}/public/images/ifp_deformation.png"\></center>
+
 where \\(|\tilde{J}|\\) is the determinant of the Jacobian Matrix. Now, how does this ratio of volumes change in time; what is \\(\frac\{d|\tilde{J}|}{dt}\\)?
 
 The determinant \\(|\tilde{J}|\\) looks like this:
@@ -171,7 +171,7 @@ For the time-being, imagine a 2-dimensional square shaped IFP (because it's easi
 
 $$ \vec{t\_{(n)}}dl - \vec{t\_1}dl\_1 - \vec{t\_2}dl\_2  = 0 $$
 
-<img src = "{{ site.url }}/public/images/triangle_vectors.png"\>
+<center><img src = "{{ site.url }}/public/images/triangle_vectors.png"\></center>
 
 Here, the signs of the forces are an artefact of the coordinate system. You should get the right signs as long as you're consistent with the directions of your forces relative to the surface normals. Here, all forces are pointing outside the triangle. To be more precise, since the ratios of the the length of a perpendicular to the hypotenuse is a component of the normal vector to the hypotenuse, we can write 
 
