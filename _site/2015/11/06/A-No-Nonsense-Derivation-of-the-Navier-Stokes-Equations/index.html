@@ -89,6 +89,8 @@
 
 <p>3) Develop the form of the stress tensor for a Newtonian Fluid.</p>
 
+<p>4) Derive a corrseponding transport equation for internal energy.</p>
+
 <p>Warning: A preliminary understanding - if not appreciation - of vector calculus, including tensors, is required to <em>get</em> whats about to follow. Here are some relevant chapters from Feynman&#39;s Lectures:</p>
 
 <p><a href="http://www.feynmanlectures.caltech.edu/II_02.html">Differential Calculus of Vector Fields</a></p>
@@ -401,9 +403,46 @@ where</p>
 
 <p>I&#39;ve heard many call the NS equations ugly. I think they&#39;re particularly beautiful. Look at all the considerations that had to be made so we could mathematically articulate fluid flow! Isn&#39;t the result inspiring? It sure is to me! </p>
 
-<p>Let us not forget the conservation of energy! It is clear that the rate of work done on an IFP is proportional to the velocity of the IFP times the stresses acting on it. Specifically we need to evaluate \(\oint_{S}\ v_iT_{ij}n_jdS\).</p>
+<hr>
 
-<p>$$ \oint_{S}\ v_iT_{ij}n_jdS = \oint_{V}\nabla\cdot(\vec{v}\tilde{T})dV $$</p>
+<h1>The Transport of Internal Energy</h1>
+
+<p>Let us evaluate the rate of work done on the IFP by the various stresses , i.e. \(\oint_{S}\ v_iT_{ij}n_jdS\) (or \(\oint_{S}\vec{v}\cdot\vec{t}_{(n)}dS\)).</p>
+
+<p>$$ \oint_{S}\ v_iT_{ij}n_jdS = \oint_{V}\nabla\cdot(\vec{v}\tilde{T})dV $$
+$$  = \oint_{V}(\vec{v}\cdot(\nabla\cdot\tilde{T}) + \tilde{T}:\nabla\vec{v})dV $$</p>
+
+<p>The second term is what is called a double contraction; it produces a scalars, as it should. The first term is the scalar product of the velocity and the divergence of the stress tensor. But the divergence of the stress tensor already appears in the Navier Stokes equation, so we can just pull it from there:</p>
+
+<p>$$  \oint_{S}\ v_iT_{ij}n_jdS  $$
+$$  = \oint_{V}(\vec{v}\cdot(\rho\frac{d\vec{v}}{dt}-\rho f) + \tilde{T}:\nabla\vec{v})dV $$</p>
+
+<p>Rearrange this to arrive at the rate of change of kinetic energy for an IFP:</p>
+
+<p>$$ \frac{d}{dt}\oint_{V}\frac{1}{2}\rho v^2dV = \oint_{V}\rho \vec{f}\cdot\vec{v}dV - \oint_{V}\tilde{T}:\nabla{v}dV + \oint_{S}\vec{v}\cdot\vec{t}_{(n)}dS $$</p>
+
+<p>(We note that 
+$$ \oint_{V}\vec{v}\cdot(\rho\frac{d\vec{v}}{dt})dV $$
+$$  = \oint_{V}\frac{\rho}{2}(\frac{d v^2}{dt})dV $$
+$$  = \oint_{V}\frac{d}{dt}(\frac{\rho v^2}{2})dV  - \oint_{V}\frac{v^2}{2}\frac{d\rho}{dt}dV $$
+$$  = \frac{d}{dt}\oint_{V}\frac{\rho v^2}{2}dV $$
+which all follows from the same tricks we used in deriving Reynolds&#39; Transport Theorem.)</p>
+
+<p>Upon examining the rate of change of kinetic energy, the first term on the right hand side is the power expended by body forces, the second term denotes the power expended by internal stresses and the third term denotes the power expended by surface stresses. We can decompose the second term into power expended by <em>reversible</em> internal stresses and power expended by <em>irreversible</em> internal stresses:</p>
+
+<p>$$ \tilde{T}:\vec{v} = P\nabla\cdot\vec{v} + \Phi $$</p>
+
+<p>The first term on the right hand side is the rate of change of strain energy and the second is viscous dissipation. It is this dissipation that leads to an increase in entropy of the IFP.</p>
+
+<p>We began by expressing the surface stresses in terms of the kinetic energy of the IFP. But what about the total energy of the IFP? The rate of change of the total energy of the IFP (the sum of internal and kinetic energies) must be equal to the sum of power due to the body forces, power due to the surface stresses and the heat loss from the IFP due to conduction, radiation, mass diffusion, etc. We can write this integrally as</p>
+
+<p>$$ \frac{d}{dt}\oint_{V}\rho(\frac{1}{2}v^2 + \epsilon)dV = \oint_{V}\rho \vec{f}\cdot\vec{v}dV + \oint_S\vec{v}\cdot\vec{t}_{(n)}dS - \oint_S\vec{q}\cdot\hat{n}dS $$</p>
+
+<p>Here, \(\epsilon\) is the specific internal energy of the IFP (energy per unit mass) and \(\vec{q}\) is the heat flux vector. Subtract the rate of change of kinetic energy from this, rearrange ( we should now be experts in moving time derivatives into and out of integrals), apply Green&#39;s theorem to convert surface integrals to volume integrals to finally get:</p>
+
+<p>$$ \rho\frac{d\epsilon}{dt} = \nabla\cdot\vec{q} - P(\nabla\cdot\vec{v}) + \Phi $$</p>
+
+<p>So the rate of change of internal energy of the IFP is simply given by how much heat enters it, how much pressure work it exerts on the surrounding IFPs, and the viscous dissipation. Since the dissipation is always positive, we lose kinetic energy while gaining it in the form of internal (thermal) energy.</p>
 
 <h1>Footnotes</h1>
 
