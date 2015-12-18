@@ -171,9 +171,8 @@ For the time-being, imagine a 2-dimensional square shaped IFP (because it's easi
 
 $$ \vec{t\_{(n)}}dl - \vec{t\_1}dl\_1 - \vec{t\_2}dl\_2  = 0 $$
 
-<img src = "{{ site.url }}/public/images/triangle_vectors.png" >
+<img src = "{{ site.url }}/public/images/triangle_vectors.png"\>
 
-[My helpful screenshot]({{ site.url }}/assets/triangle_vectors.png)
 Here, the signs of the forces are an artefact of the coordinate system. You should get the right signs as long as you're consistent with the directions of your forces relative to the surface normals. Here, all forces are pointing outside the triangle. To be more precise, since the ratios of the the length of a perpendicular to the hypotenuse is a component of the normal vector to the hypotenuse, we can write 
 
 $$ \vec{t\_{(n)}} = \vec{t\_1}|n\_1| + \vec{t\_2}|n\_2|  $$
