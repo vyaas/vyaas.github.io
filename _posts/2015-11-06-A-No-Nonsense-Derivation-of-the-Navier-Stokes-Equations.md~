@@ -92,6 +92,9 @@ $$ \vec{d\xi} = \tilde{J}\vec{dx} $$
 Therefore the relationship between the old and new volumes is
 
 $$ dV = |\tilde{J}|dV\_0 $$
+
+<center><img src = "{{ site.url }}/public/images/ifp_deformation.png"\></center>
+
 where \\(|\tilde{J}|\\) is the determinant of the Jacobian Matrix. Now, how does this ratio of volumes change in time; what is \\(\frac\{d|\tilde{J}|}{dt}\\)?
 
 The determinant \\(|\tilde{J}|\\) looks like this:

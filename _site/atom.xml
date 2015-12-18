@@ -4,7 +4,7 @@
  <title>Analytic Cravings</title>
  <link href="https://vyaas.github.io/atom.xml" rel="self"/>
  <link href="https://vyaas.github.io/"/>
- <updated>2015-12-18T01:06:23-08:00</updated>
+ <updated>2015-12-18T01:07:57-08:00</updated>
  <id>https://vyaas.github.io</id>
  <author>
    <name>Vyaas Gururajan</name>
@@ -107,8 +107,11 @@ $$ \frac{d\psi}{dt} = \vec{u}\cdot\nabla\psi+ \frac{\partial\psi}{\partial t} $$
 
 &lt;p&gt;Therefore the relationship between the old and new volumes is&lt;/p&gt;
 
-&lt;p&gt;$$ dV = |\tilde{J}|dV_0 $$
-where \(|\tilde{J}|\) is the determinant of the Jacobian Matrix. Now, how does this ratio of volumes change in time; what is \(\frac{d|\tilde{J}|}{dt}\)?&lt;/p&gt;
+&lt;p&gt;$$ dV = |\tilde{J}|dV_0 $$&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = &quot;https://vyaas.github.io/public/images/ifp_deformation.png&quot;\&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;where \(|\tilde{J}|\) is the determinant of the Jacobian Matrix. Now, how does this ratio of volumes change in time; what is \(\frac{d|\tilde{J}|}{dt}\)?&lt;/p&gt;
 
 &lt;p&gt;The determinant \(|\tilde{J}|\) looks like this:
 $$ \begin{vmatrix}
