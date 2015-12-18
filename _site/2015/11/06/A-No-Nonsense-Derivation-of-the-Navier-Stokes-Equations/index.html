@@ -111,7 +111,7 @@
 
 <hr>
 
-<p>View-1 seems to ask &quot;Where is that IFP going?&quot; while View-2 asks &quot;How is this picture of the flow going to change?&quot;<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>. When studying the dynamics of rigid bodies, we always followed particles around. \(\vec{F}=m\vec{a}\) was referring to the acceleration of a particle (View-1), not the position in space at which the velocity was changing (View-2), which is nonsense because the particle can only occupy one point in space (or at most a finite portion of it) at any given time. What velocity and acceleration could we possibly ascribe to empty points in space?! But for fluids, or more generally for continuous media, we don&#39;t run into this problem. In our domain of interest, every point in space is <em>occupied</em> so every one of these points can be ascribed properties like velocities, accelerations, densities, pressures, temperatures, entropies, concentrations, vorticities, etc. &quot;But how can a point, the teeniest-tinyest imaginable point, have any mass?!&quot; you demand. Indeed, when considering a point in space, chances are that it is occupied more by vacuum than anything else. The points we&#39;re considering in the case of fluids are points which are fairly large. Large enough to comprise \(10^{15}\) molecules and upwards. Large enough to have a mass per unit volume. Large enough to have a mean temperature. Large enough to have molecules colliding with one another to exert pressure on any area upon which they impinge. If your points are any smaller than this, you are guaranteed nonsense, atleast if you choose to use the framework we&#39;re developing. You would be describing regions in space molecules may or may not have arrived at. What we&#39;re doing in fluid mechanics is zooming out so that everything looks nice and continuous and not bumpy and discrete. And since we&#39;re looking to transform from points in space (View-2) to following IFPs (View-1), our IFPs are also to be thought of as being large enough to contain \(10^{15}\) particles, large enough to have a mass per unit volume and so on. Of course, we don&#39;t want our points (or IFPs) to be too large either; we&#39;d lose the resolution we desire to examine important phenomena like diffusion! Similar arguments apply to time. We are describing flow over time-scales much larger than the time-scales of thermal equilibration. Only then can we ascribe to our fluid various thermodynamic properties. Probing into timescales shorter than this leads once again to absurdities<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
+<p>View-1 seems to ask &quot;Where is that IFP going?&quot; while View-2 asks &quot;How is this picture of the flow going to change?&quot;<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>. When studying the dynamics of rigid bodies, we always followed particles around. \(\vec{F}=m\vec{a}\) was referring to the acceleration of a particle (View-1), not the position in space at which the velocity was changing (View-2), which is nonsense because the particle can only occupy one point in space (or at most a finite portion of it) at any given time. What velocity and acceleration could we possibly ascribe to empty points in space?! But for fluids, or more generally for continuous media, we don&#39;t run into this problem. In our domain of interest, every point in space is <em>occupied</em> so every one of these points can be ascribed properties like velocities, accelerations, densities, pressures, temperatures, entropies, concentrations, vorticities, etc. &quot;But how can a point, the teeniest-tinyest imaginable point, have any mass?!&quot; you demand. Indeed, when considering a point in space, chances are that it is occupied more by vacuum than anything else. The points we&#39;re considering in the case of fluids are points which are fairly large. Large enough to comprise \(10^{15}\) molecules and upwards. Large enough to have a mass per unit volume. Large enough to have a mean temperature. Large enough to have molecules colliding with one another to exert pressure on any area upon which they impinge. If your points are any smaller than this, you are guaranteed nonsense, atleast if you choose to use the framework we&#39;re developing. You would be describing regions in space molecules may or may not have arrived at. What we&#39;re doing in fluid mechanics is zooming out so that everything looks nice and continuous and not bumpy and discrete. And since we&#39;re looking to transform from points in space (View-2) to following IFPs (View-1), our IFPs are also to be thought of as being large enough to contain \(10^{15}\) particles, large enough to have a mass per unit volume and so on. Of course, we don&#39;t want our points (or IFPs) to be too large either; we&#39;d lose the resolution we desire to examine important phenomena like diffusion! Similar arguments apply to time. We are describing flow over time-scales much larger than the time-scales of thermal equilibration. Only then can we ascribe to our fluid various thermodynamic properties. Probing into timescales shorter than this leads, once again, to absurdities<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
 
 <p>View-1 and View-2 are equivalent. The laws of Fluid Physics should not change depending on which description you choose. But we need both views. View-2 is convenient for calculations, but View-1 is what we&#39;ve been trained in since high school. So we should learn how to transform all relevant physical quantities from one view to another.</p>
 
@@ -169,11 +169,12 @@ $$ \frac{d\psi}{dt} = \vec{u}\cdot\nabla\psi+ \frac{\partial\psi}{\partial t} $$
 
 <p>Therefore the relationship between the old and new volumes is</p>
 
-<p>$$ dV = |\tilde{J}|dV_0 $$</p>
+<p>$$ dV = |\tilde{J}|dV_0 $$
+where \(|\tilde{J}|\) is the determinant of the Jacobian Matrix. </p>
 
 <p><center><img src = "https://vyaas.github.io/public/images/ifp_deformation.png"\></center></p>
 
-<p>where \(|\tilde{J}|\) is the determinant of the Jacobian Matrix. Now, how does this ratio of volumes change in time; what is \(\frac{d|\tilde{J}|}{dt}\)?</p>
+<p>Now, how does this ratio of volumes change in time; what is \(\frac{d|\tilde{J}|}{dt}\)?</p>
 
 <p>The determinant \(|\tilde{J}|\) looks like this:
 $$ \begin{vmatrix}
@@ -308,7 +309,7 @@ $$ T_{21}\hat{n_1} + T_{22}\hat{n_2} + T_{23}\hat{n_3} $$</p>
 
 <p>Using the Reynolds Transport Theorem, it becomes</p>
 
-<p>$$ \oint_{V(t)} \frac{\partial(\rho\vec{u})}{\partial t}dV  \oint_{S(t)}\rho\vec{u}\otimes\vec{u}\cdot\hat{n}dS = \oint_{V(t)} \rho\vec{f} dV + \oint_{V(t)}\nabla\cdot\tilde{T}dV $$</p>
+<p>$$ \oint_{V(t)} \frac{\partial(\rho\vec{u})}{\partial t}dV  + \oint_{S(t)}\rho\vec{u}\otimes\vec{u}\cdot\hat{n}dS = \oint_{V(t)} \rho\vec{f} dV + \oint_{V(t)}\nabla\cdot\tilde{T}dV $$</p>
 
 <p>Upon applying Green&#39;s Theorem,</p>
 
@@ -399,6 +400,10 @@ where</p>
 <p>There we have it! There is much to comment on these equations, but I&#39;ll leave that for another post. </p>
 
 <p>I&#39;ve heard many call the NS equations ugly. I think they&#39;re particularly beautiful. Look at all the considerations that had to be made so we could mathematically articulate fluid flow! Isn&#39;t the result inspiring? It sure is to me! </p>
+
+<p>Let us not forget the conservation of energy! It is clear that the rate of work done on an IFP is proportional to the velocity of the IFP times the stresses acting on it. Specifically we need to evaluate \(\oint_{S}\ v_iT_{ij}n_jdS\).</p>
+
+<p>$$ \oint_{S}\ v_iT_{ij}n_jdS = \oint_{V}\nabla\cdot(\vec{v}\tilde{T})dV $$</p>
 
 <h1>Footnotes</h1>
 

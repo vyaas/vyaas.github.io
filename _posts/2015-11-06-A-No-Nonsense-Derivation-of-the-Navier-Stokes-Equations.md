@@ -232,7 +232,7 @@ $$ \frac{d}{dt}\oint\_{V(t)} \rho\vec{u} dV  = \oint\_{V(t)} \rho\vec{f} dV + \o
 
 Using the Reynolds Transport Theorem, it becomes
 
-$$ \oint\_{V(t)} \frac{\partial(\rho\vec{u})}{\partial t}dV  \oint\_{S(t)}\rho\vec{u}\otimes\vec{u}\cdot\hat{n}dS = \oint\_{V(t)} \rho\vec{f} dV + \oint\_{V(t)}\nabla\cdot\tilde{T}dV $$
+$$ \oint\_{V(t)} \frac{\partial(\rho\vec{u})}{\partial t}dV  + \oint\_{S(t)}\rho\vec{u}\otimes\vec{u}\cdot\hat{n}dS = \oint\_{V(t)} \rho\vec{f} dV + \oint\_{V(t)}\nabla\cdot\tilde{T}dV $$
 
 Upon applying Green's Theorem,
 
@@ -323,6 +323,10 @@ $$ \tilde{T} = -P\tilde{\delta} + \mu\left((\nabla\vec{u}) + (\nabla\vec{u})^T -
 There we have it! There is much to comment on these equations, but I'll leave that for another post. 
 
 I've heard many call the NS equations ugly. I think they're particularly beautiful. Look at all the considerations that had to be made so we could mathematically articulate fluid flow! Isn't the result inspiring? It sure is to me! 
+
+Let us not forget the conservation of energy! It is clear that the rate of work done on an IFP is proportional to the velocity of the IFP times the stresses acting on it. Specifically we need to evaluate \\(\oint\_{S}\ v\_iT\_{ij}n\_jdS\\).
+
+$$ \oint\_{S}\ v\_iT\_{ij}n\_jdS = \oint\_{V}\nabla\cdot(\vec{v}\tilde{T})dV $$
 
 #Footnotes
 
