@@ -131,8 +131,6 @@ References:
 
 [^2]: Jaynes, E. T., 1979, [_Where do we Stand on Maximum Entropy?_](http://bayes.wustl.edu/etj/node1.html).
 
-[3^]: The Onsager reciprocal relations is a statement about how the rates of simultaneous processes are related, like the diffusion of heat and mass or the flow of heat and electric current. For a short derivation, see _Jaynes, E. T. The minimum entropy production principle. Annual Review of Physical Chemistry, 31(1), 579-601_. For a standard introduction, see _Landau, L.D. and Lifshitz, E.M., 1980. Statistical physics, part I. Course of theoretical physics, 5, p.468._
+[^3]: The Onsager reciprocal relations is a statement about how the rates of simultaneous processes are related, like the diffusion of heat and mass or the flow of heat and electric current. For a short derivation, see _Jaynes, E. T. The minimum entropy production principle. Annual Review of Physical Chemistry, 31(1), 579-601_. For a standard introduction, see _Landau, L.D. and Lifshitz, E.M., 1980. Statistical physics, part I. Course of theoretical physics, 5, p.468._
 
-[4^]: The Fluctuation Dissipation Theorem, first articulated by Einstein, is a statement about how the very "random" forces that cause the fluctuation of a quantity, also results in damping that quantity. For a simple introduction, read the first chapter of _Zwanzig, R., 2001. Nonequilibrium statistical mechanics. Oxford University Press, USA._
-
-[4^]: 
+[^4]: The Fluctuation Dissipation Theorem, first articulated by Einstein, is a statement about how the very "random" forces that cause the fluctuation of a quantity, also results in damping that quantity. For a simple introduction, read the first chapter of _Zwanzig, R., 2001. Nonequilibrium statistical mechanics. Oxford University Press, USA._
