@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Frustration with Fluctuations &middot; Analytic Cravings
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/blackdoc.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=EB+Garamond">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Analytic Cravings
+        </a>
+      </h1>
+      <p class="lead">Amusements and Abusements of Theory</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About the site's writer</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+
+      <hr>
+      <a style="font-size:14px" class="sidebar-nav-item" href="https://github.com/karloespiritu/BlackDoc">karlosespiritu's BlackDoc Theme</a>
+      <a style="font-size:14px" class="sidebar-nav-item" href="http://pooleapp.com/">Comments handled by PooleApp</a>
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Frustration with Fluctuations</h1>
+  <p>The following is a simple, yet radically important point made by <a href="http://bayes.wustl.edu/">E.T. Jaynes</a>. </p>
+
+<p>When a physical occurrence appears too complicated to understand, we assign to it a probability of happening, based on all the available information we have. These probability distributions are, as Jaynes has put it, carriers of information. They are epistemological things, i.e. they are founded on what we know. For instance, the <em>expectation value</em> of a quantity \(f\) relevant to some phenonmenon is given by</p>
+
+<p>$$ \langle f \rangle = \sum_{i}^np_if_i $$</p>
+
+<p>Here, \(n\) is the number of microscopic configurations the system can be in (i.e. subject to the constraints), \(p_i\) is the probability that the system exhibits the \(i\)th occurrence, and \(f_i\) is the value f takes in such an occurrence. We call \(\langle f \rangle\) the expectation value of \(f\). It is a prediction based on all the information we have of the system.</p>
+
+<p>How much an \(f_i\) deviates from \(\langle f \rangle\) is given by the difference \( f_i - \langle f \rangle \). The expectation value of such a deviation is an indicator of how reliable our expectation value is.</p>
+
+<p>$$ \Delta^{2}f = \langle (\Delta f)^2 \rangle $$
+$$             = \langle (f - \langle f \rangle)^2 \rangle $$
+$$             = \langle f^2 - 2f \langle f\rangle + (\langle f \rangle)^2 \rangle $$
+$$             = \langle f^2 \rangle - 2\langle f \rangle \langle f\rangle + \langle f \rangle^2 $$
+$$             = \langle f^2 \rangle - \langle f \rangle^2 $$</p>
+
+<p>We take the expectation value of the squares of the deviations because that gives us a positive number; the expectation value of just the deviation can turn out to be zero and thus hide how much each possibility varies from the mean. The quantity \(\Delta^{2}f\) is called the <em>variance</em> of \(f\). A large variance indicates that out expectation value is not very reliable. More precisely, the ratio of the expectation values to the square root of the variance tells us how good our expectation value is. This number ought to be much less than one if are to make sharp predictions. </p>
+
+<p>The expectation values and variances are epistemological things as opposed to ontological things, i.e. they are not physical properties of the system, they are simply estimates based on available information. </p>
+
+<p>Here is however, an ontological thing:</p>
+
+<p>$$ \bar{f} = \frac{1}{T}\int_{0}^T f(t)dt $$</p>
+
+<p>\(\bar{f}\) is the time average of the physical quantity \(f\). It can be experimentally measured. This has nothing to do with probabilities. But we can however make a prediction about \(\bar{f}\) by computing its expectation value:</p>
+
+<p>$$ \langle\bar{f}\rangle = \left\langle \frac{1}{T}\int_{0}^T f(t)dt \right\rangle $$
+$$                       = \frac{1}{T}\int_{0}^T \langle f \rangle dt $$</p>
+
+<p>Now <em>this</em> is a statement of probabilities. We always hope to match these expectation values with the measured quantities. The way we do this is to systematically accumulate all information relevant to the phenomenon in question and assign probability distributions. We must dutifully update these probabilities with newly available information if we wish to make reliable predictions. This is the essence of the scientific method, what Jaynes has rightly called the <em>Logic of Science</em>[^1]. </p>
+
+<p>At equilibrium, \(\langle\bar{f}\rangle = \langle f\rangle\), but in general, equating time averages with expectation values needs to be founded on more assumptions. To drive home the point, Jaynes asks us to calculate the variance of the time average[^2], i.e the reliability of our estimate of the time average.</p>
+
+<p>$$ \Delta^2\bar{f} = \langle\  (\bar{f} - \langle\bar{f}\rangle)^2\  \rangle $$
+$$         = \langle\  (\bar{f} - \langle\bar{f}\rangle) (\bar{f} - \langle\bar{f}\rangle)\rangle $$
+$$         = \frac{1}{T^2} \left\langle\ \int_{0}^T(f(t_1)-\langle f(t_1) \rangle)dt_1 \int_{0}^T(f(t_2)-\langle f(t_2) \rangle)dt_2\right \rangle $$</p>
+
+<p>$$         = \frac{1}{T^2} \left\langle\ \int_{0}^T\int_{0}^T(f(t_1)f(t_2)-f(t_1)\langle f(t_2) \rangle - f(t_2)\langle f(t_1) + \langle f(t_1) \rangle \langle f(t_2) \rangle)dt_1dt_2  \right\rangle $$
+$$         = \frac{1}{T^2} \int_{0}^T\int_{0}^T(\langle f(t_1)f(t_2)\rangle - \langle f(t_1) \rangle \langle f(t_2) \rangle)dt_1dt_2  $$</p>
+
+<p>The integrand is a function of times \(t_1\) and \(t_2\). But, if the system is in a stationary state, then the itegrand, which we call the covariance function, is a function only of the time difference \(\tau = t_2 - t_1\).</p>
+
+<p>$$ K(\tau) = \langle f(t)f(t+\tau) \rangle + \langle f(t) \rangle \langle f(t+\tau) \rangle $$
+$$         = \langle f(0)f(\tau) \rangle + \langle f \rangle^2  $$</p>
+
+<p>We should therefore be able to reduce the double integral to a single integral. We do this by changing the variables of integration. Let us define two new variables</p>
+
+<p>$$ \tau = t_1 - t_2 $$
+$$ \eta = t_1 + t_2 $$</p>
+
+<p>The relationship between the infinitesimal areas in the two domains is given by:</p>
+
+<p>$$ ||J|| dt_1dt_2 = d\tau d\eta $$</p>
+
+<p>where \(||J||\) is the absolute value of the Jacobian (determinant) of the transformation which is given by</p>
+
+<p>$$ \begin{vmatrix}
+\frac{\partial \tau}{\partial t_1}  &amp; \frac{\partial \eta}{\partial t_2}  \\ 
+\frac{\partial \tau}{\partial t_1}  &amp; \frac{\partial \eta}{\partial t_2}  \\
+\end{vmatrix} $$</p>
+
+<p>According to our adopted transformation, \(||J|| = 2\).</p>
+
+<p><center><img src = "../../../../public/images/integral_change_of_variables.png"\></center>
+<center><img src = "https://vyaas.github.io/public/images/integral_change_of_variables.png"\></center></p>
+
+<p>To integrate in the new domain, we need to change the limits of integration. We would like to integrate out over \(\eta\) so that we&#39;re left with an integral over \(\tau\). As can be seen from the figure below, when \(\tau&gt;0\), \(\eta\) varies between \(\tau\) and \(2T-\tau\). When \(\tau&lt;0\), \(\eta\) varies between \(\tau\) and \(2T+\tau\). So on the whole, we see that \(\eta\) varies between \(|\tau|\) and \(2T-|\tau|\). \(\tau\) ofcourse varies between \(-T\) and \(T\). Therefore, </p>
+
+<p>$$ \Delta^2\bar{f} = \frac{1}{2T^2}\int_{-T}^{T}d\tau\int_{|\tau|}^{2T-|\tau|}K(\tau)d\eta $$
+$$                 = \frac{1}{T^2}\int_{-T}^{T}(T-\tau)K(\tau)d\tau $$</p>
+
+<p>Since \(K(\tau)\) is symmetric in \(\tau\),
+$$  \Delta^2\bar{f} = \frac{2}{T^2}\int_{0}^{T}(T-\tau)K(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.1)}$$</p>
+
+<p>It is insufficient to claim that the variance of \(\bar{f}\) gets better as \(T\to\infty\). For that to be true, we need the integrals \(\int_{0}^{\infty}K(\tau)d\tau\) and \(\int_{0}^{\infty}\tau K(\tau)d\tau\) to converge. Therefore, if correlations persist for a long time, we cannot make a reliable estimate of the time average! That simply means we need to supplement our probabilities with more information. </p>
+
+<p>What about measurable fluctuations? The root-mean-square fluctuation of a quantity \(f\) is given by</p>
+
+<p>$$ \delta^2 f = \frac{1}{T}\int_{0}^{T}(f(t)-\bar{f})^2dt $$ 
+$$        = \bar{f^2} - (\bar{f})^2 $$</p>
+
+<p>This is a measure of how much a quantity is different from its time average. It is indeed measurable and has nothing to do with the variance of the quantity or the variance of the time average of the quantity. </p>
+
+<p>But there is an unexpected relationship between the <em>expectation value</em> of the RMS fluctuation and the variance of the time average. To derive it we first note that there is a second equivalent formula for the RMS fluctuation of f:</p>
+
+<p>$$ \delta^2 f = \frac{1}{T}\int_{0}^{T}(f(t)-\bar{f})^2dt $$
+$$    = \frac{1}{T^2}\int_{0}^{T}\int_{0}^{T}(f(t_1)^2-f(t_1)(t_2))dt_1dt_2 $$</p>
+
+<p>Why have we converted this single integral into a double integral? You&#39;ll soon see why. Now let us take the expectation value of both sides:</p>
+
+<p>$$ \langle \delta^2 f \rangle = \frac{1}{T^2}\int_{0}^{T}\int_{0}^{T}(\langle f(t_1)^2 \rangle - \langle f(t_1)f(t_2) \rangle)dt_1dt_2 $$</p>
+
+<p>Since we&#39;re discussing stationary processes, We&#39;ll convert this double integral to a single integral using the same change of variables we did earlier. The expectation value of the RMS fluctuation is thus</p>
+
+<p>$$ \langle \delta^2 f \rangle = \frac{2}{T^2}\int_{0}^{T}(T-\tau)G(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.2)}$$</p>
+
+<p>where 
+$$ G(\tau) = \langle f^2 \rangle - \langle f(0)f(\tau) \rangle $$</p>
+
+<p>assuming a stationary process. Note the difference between \(G(\tau)\) and \(K(\tau)\). The latter contains the square of the expectation value while the former contains the expectation value of the square. We know that the difference between these gives us the variance! We can exploit this by rewriting \((e.1) \) as follows:</p>
+
+<p>$$  \Delta^2\bar{f} = \frac{2}{T^2}\int_{0}^{T}(T-\tau) (\langle f(0)f(\tau) \rangle + \langle f \rangle^2) d\tau $$</p>
+
+<p>Rearrange this to get </p>
+
+<p>$$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \Delta^2\bar{f} + \langle f \rangle^2 $$</p>
+
+<p>We can similarly rearrange \((e.2)\) to get 
+$$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle f \rangle^2  - \langle \delta^2 f \rangle $$</p>
+
+<p>We therefore have, quite amazingly,</p>
+
+<p>$$ \langle \delta^2 f \rangle = \Delta^2 f - \Delta^2 \bar{f} $$</p>
+
+<p>If our time for averaging is long enough that \(\Delta^2 \bar{f} \to 0 \), then we can equate the expectation value of the fluctuation with the variance! Note that \( \Delta^2 \bar{f} \leq \Delta^2 f\) because \(\langle \delta^2 f \rangle\) can never be negative.</p>
+
+<p>And how good is this estimate you ask? We need to compute the expectation value of the variance of the variance, which leads to a four-point correlation. This hierarchy is treacherous mathematical territory, but leads one to appreciate the <em>Ergodic problem of probability</em>. Equating time averages with expectation values is highly non-trivial. The above derivation sheds light on why some fluctuation based results from statistical mechanics make sense, like the Onsager reciprocal relations and the fluctuation dissipation theorem. These have been shown to yield very good agreement with experiment, a reflection of propagating sufficient information via the partition function and also taking time averages over a sufficiently long duration. It is surprising, and often frustrating, that a majority of researchers (and teachers) don&#39;t pay any heed to the above line of reasoning. Part of the problem stems from the prevalent view that probabilities of occurrence are actually frequencies of occurrence. This is, in my opinion and many others, a terribly misinformed view. Nature is not inherently random. If classical and quantum mechanics has taught us anything, it is that these systems are fundamentally deterministic, and that Nature will do whatever it is doing. It is our ignorance in following the detailed motions, the various degrees of freedom, that forces us to resort to probabilistic descriptions. The probabilities we derive in equilibrium statistical mechanics do not take into account the temporal behavior of the system, yet we derive results about physical fluctuations and symmetries of kinetic coefficients! These must come from additional non-trivial assumptions.</p>
+
+<p>References:</p>
+
+<p>[^1] Reading Jaynes&#39; <a href="https://books.google.se/books/about/Probability_Theory.html?id=tTN4HuUNXjgC&amp;redir_esc=y"><em>Probability Theory: Logic of Science</em></a> is an intellectual adventure deserved to be experienced by everyone. Not just people in Science. Everyone.</p>
+
+<p>[^2]Jaynes, E. T., <a href="http://bayes.wustl.edu/etj/node1.html"><em>Where do we Stand on Maximum Entropy?</em></a>, 1979</p>
+
+</div>
+<script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    </div>
+
+  </body>
+</html>

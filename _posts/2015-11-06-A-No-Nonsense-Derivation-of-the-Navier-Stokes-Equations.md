@@ -369,7 +369,7 @@ So the rate of change of internal energy of the IFP is simply given by how much 
 
 #Footnotes
 
-[^1]: View-1 is popularly known as the "Lagrangian" view point. View-2 is called "Eulerian" everywhere. These names obstruct understanding, which is why I have avoided using them. No disrespect intended of course.
+[^1]: View-1 is popularly known as the "Lagrangian" view point while View-2 is called "Eulerian". These names obstruct understanding, which is why I have avoided using them. No disrespect intended of course.
 
 [^2]: Such arguments are formally made in the subject of statistical mechanics where the name of the game is to basically prove the laws of thermodynamics, those undeniable constraints on all macroscopic phenomena, by combining the properties of atoms and the laws of microscopic motion via some sexy results from probability theory. Beholding its results truly takes the breath away!
 
