@@ -108,21 +108,21 @@ $$             = \langle f^2 \rangle - \langle f \rangle^2 $$</p>
 <p>$$ \langle\bar{f}\rangle = \left\langle \frac{1}{T}\int_{0}^T f(t)dt \right\rangle $$
 $$                       = \frac{1}{T}\int_{0}^T \langle f \rangle dt $$</p>
 
-<p>Now <em>this</em> is a statement of probabilities. We always hope to match these expectation values with the measured quantities. The way we do this is to systematically accumulate all information relevant to the phenomenon in question and assign probability distributions. We must dutifully update these probabilities with newly available information if we wish to make reliable predictions. This is the essence of the scientific method, what Jaynes has rightly called the <em>Logic of Science</em>[^1]. </p>
+<p>Now <em>this</em> is a statement of probabilities. We always hope to match these expectation values with the measured quantities. The way we do this is to systematically accumulate all information relevant to the phenomenon in question and assign probability distributions. We must dutifully update these probabilities with newly available information if we wish to make reliable predictions. This is the essence of the scientific method, what Jaynes has rightly called the <em>Logic of Science</em><sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>. </p>
 
-<p>At equilibrium, \(\langle\bar{f}\rangle = \langle f\rangle\), but in general, equating time averages with expectation values needs to be founded on more assumptions. To drive home the point, Jaynes asks us to calculate the variance of the time average[^2], i.e the reliability of our estimate of the time average.</p>
+<p>At equilibrium, \(\langle\bar{f}\rangle = \langle f\rangle\), but in general, equating time averages with expectation values needs to be founded on more assumptions. To drive home the point, Jaynes asks us to calculate the variance of the time average<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>, i.e the reliability of our estimate of the time average.</p>
 
 <p>$$ \Delta^2\bar{f} = \langle\  (\bar{f} - \langle\bar{f}\rangle)^2\  \rangle $$
 $$         = \langle\  (\bar{f} - \langle\bar{f}\rangle) (\bar{f} - \langle\bar{f}\rangle)\rangle $$
 $$         = \frac{1}{T^2} \left\langle\ \int_{0}^T(f(t_1)-\langle f(t_1) \rangle)dt_1 \int_{0}^T(f(t_2)-\langle f(t_2) \rangle)dt_2\right \rangle $$</p>
 
-<p>$$         = \frac{1}{T^2} \left\langle\ \int_{0}^T\int_{0}^T(f(t_1)f(t_2)-f(t_1)\langle f(t_2) \rangle - f(t_2)\langle f(t_1) + \langle f(t_1) \rangle \langle f(t_2) \rangle)dt_1dt_2  \right\rangle $$
+<p>$$         = \frac{1}{T^2} \left\langle\ \int_{0}^T\int_{0}^T(f(t_1)f(t_2)-f(t_1)\langle f(t_2) \rangle - f(t_2)\langle f(t_1)\rangle + \langle f(t_1) \rangle \langle f(t_2) \rangle)dt_1dt_2  \right\rangle $$
 $$         = \frac{1}{T^2} \int_{0}^T\int_{0}^T(\langle f(t_1)f(t_2)\rangle - \langle f(t_1) \rangle \langle f(t_2) \rangle)dt_1dt_2  $$</p>
 
-<p>The integrand is a function of times \(t_1\) and \(t_2\). But, if the system is in a stationary state, then the itegrand, which we call the covariance function, is a function only of the time difference \(\tau = t_2 - t_1\).</p>
+<p>The integrand is a function of times \(t_1\) and \(t_2\). But, if the system is in a stationary state, then the itegrand, which we call the <em>autocorrellation function</em><sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>, depends only on the time difference \(\tau = t_2 - t_1\).</p>
 
-<p>$$ K(\tau) = \langle f(t)f(t+\tau) \rangle + \langle f(t) \rangle \langle f(t+\tau) \rangle $$
-$$         = \langle f(0)f(\tau) \rangle + \langle f \rangle^2  $$</p>
+<p>$$ K(\tau) = \langle f(t)f(t+\tau) \rangle - \langle f(t) \rangle \langle f(t+\tau) \rangle $$
+$$         = \langle f(0)f(\tau) \rangle - \langle f \rangle^2  $$</p>
 
 <p>We should therefore be able to reduce the double integral to a single integral. We do this by changing the variables of integration. Let us define two new variables</p>
 
@@ -142,8 +142,7 @@ $$ \eta = t_1 + t_2 $$</p>
 
 <p>According to our adopted transformation, \(||J|| = 2\).</p>
 
-<p><center><img src = "../../../../public/images/integral_change_of_variables.png"\></center>
-<center><img src = "https://vyaas.github.io/public/images/integral_change_of_variables.png"\></center></p>
+<p><center><img src = "https://vyaas.github.io/public/images/integral_change_of_variables.png"\></center></p>
 
 <p>To integrate in the new domain, we need to change the limits of integration. We would like to integrate out over \(\eta\) so that we&#39;re left with an integral over \(\tau\). As can be seen from the figure below, when \(\tau&gt;0\), \(\eta\) varies between \(\tau\) and \(2T-\tau\). When \(\tau&lt;0\), \(\eta\) varies between \(\tau\) and \(2T+\tau\). So on the whole, we see that \(\eta\) varies between \(|\tau|\) and \(2T-|\tau|\). \(\tau\) ofcourse varies between \(-T\) and \(T\). Therefore, </p>
 
@@ -153,7 +152,7 @@ $$                 = \frac{1}{T^2}\int_{-T}^{T}(T-\tau)K(\tau)d\tau $$</p>
 <p>Since \(K(\tau)\) is symmetric in \(\tau\),
 $$  \Delta^2\bar{f} = \frac{2}{T^2}\int_{0}^{T}(T-\tau)K(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.1)}$$</p>
 
-<p>It is insufficient to claim that the variance of \(\bar{f}\) gets better as \(T\to\infty\). For that to be true, we need the integrals \(\int_{0}^{\infty}K(\tau)d\tau\) and \(\int_{0}^{\infty}\tau K(\tau)d\tau\) to converge. Therefore, if correlations persist for a long time, we cannot make a reliable estimate of the time average! That simply means we need to supplement our probabilities with more information. </p>
+<p>It is insufficient to claim that the variance of \(\bar{f}\) becomes insignificantly small as \(T\to\infty\), i.e. it is not enough to say that for long averaging times, our estimate of the time average becomes precise. For that to be true, we need the integrals \(\int_{0}^{\infty}K(\tau)d\tau\) and \(\int_{0}^{\infty}\tau K(\tau)d\tau\) to converge. But if correlations persist for a long time, we cannot make a reliable estimate of the time average! </p>
 
 <p>What about measurable fluctuations? The root-mean-square fluctuation of a quantity \(f\) is given by</p>
 
@@ -171,7 +170,7 @@ $$    = \frac{1}{T^2}\int_{0}^{T}\int_{0}^{T}(f(t_1)^2-f(t_1)(t_2))dt_1dt_2 $$</
 
 <p>$$ \langle \delta^2 f \rangle = \frac{1}{T^2}\int_{0}^{T}\int_{0}^{T}(\langle f(t_1)^2 \rangle - \langle f(t_1)f(t_2) \rangle)dt_1dt_2 $$</p>
 
-<p>Since we&#39;re discussing stationary processes, We&#39;ll convert this double integral to a single integral using the same change of variables we did earlier. The expectation value of the RMS fluctuation is thus</p>
+<p>Since we&#39;re discussing stationary processes, we&#39;ll convert this double integral to a single integral using the same change of variables we did earlier. The expectation value of the RMS fluctuation is thus</p>
 
 <p>$$ \langle \delta^2 f \rangle = \frac{2}{T^2}\int_{0}^{T}(T-\tau)G(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.2)}$$</p>
 
@@ -180,28 +179,109 @@ $$ G(\tau) = \langle f^2 \rangle - \langle f(0)f(\tau) \rangle $$</p>
 
 <p>assuming a stationary process. Note the difference between \(G(\tau)\) and \(K(\tau)\). The latter contains the square of the expectation value while the former contains the expectation value of the square. We know that the difference between these gives us the variance! We can exploit this by rewriting \((e.1) \) as follows:</p>
 
-<p>$$  \Delta^2\bar{f} = \frac{2}{T^2}\int_{0}^{T}(T-\tau) (\langle f(0)f(\tau) \rangle + \langle f \rangle^2) d\tau $$</p>
+<p>$$  \Delta^2\bar{f} = \frac{2}{T^2}\int_{0}^{T}(T-\tau) (\langle f(0)f(\tau) \rangle - \langle f \rangle^2) d\tau $$</p>
 
 <p>Rearrange this to get </p>
 
 <p>$$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \Delta^2\bar{f} + \langle f \rangle^2 $$</p>
 
 <p>We can similarly rearrange \((e.2)\) to get 
-$$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle f \rangle^2  - \langle \delta^2 f \rangle $$</p>
+$$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle f^2 \rangle  - \langle \delta^2 f \rangle $$</p>
 
 <p>We therefore have, quite amazingly,</p>
 
 <p>$$ \langle \delta^2 f \rangle = \Delta^2 f - \Delta^2 \bar{f} $$</p>
 
-<p>If our time for averaging is long enough that \(\Delta^2 \bar{f} \to 0 \), then we can equate the expectation value of the fluctuation with the variance! Note that \( \Delta^2 \bar{f} \leq \Delta^2 f\) because \(\langle \delta^2 f \rangle\) can never be negative.</p>
+<p>If our time for averaging is long enough that \(\Delta^2 \bar{f} \to 0 \) (i.e., those integrals we talked about need to converge), then we can equate the expectation value of the fluctuation (physical) with the variance (probabilistic)! Note that \( \Delta^2 \bar{f} \leq \Delta^2 f\) because \(\langle \delta^2 f \rangle\) can never be negative.</p>
 
-<p>And how good is this estimate you ask? We need to compute the expectation value of the variance of the variance, which leads to a four-point correlation. This hierarchy is treacherous mathematical territory, but leads one to appreciate the <em>Ergodic problem of probability</em>. Equating time averages with expectation values is highly non-trivial. The above derivation sheds light on why some fluctuation based results from statistical mechanics make sense, like the Onsager reciprocal relations and the fluctuation dissipation theorem. These have been shown to yield very good agreement with experiment, a reflection of propagating sufficient information via the partition function and also taking time averages over a sufficiently long duration. It is surprising, and often frustrating, that a majority of researchers (and teachers) don&#39;t pay any heed to the above line of reasoning. Part of the problem stems from the prevalent view that probabilities of occurrence are actually frequencies of occurrence. This is, in my opinion and many others, a terribly misinformed view. Nature is not inherently random. If classical and quantum mechanics has taught us anything, it is that these systems are fundamentally deterministic, and that Nature will do whatever it is doing. It is our ignorance in following the detailed motions, the various degrees of freedom, that forces us to resort to probabilistic descriptions. The probabilities we derive in equilibrium statistical mechanics do not take into account the temporal behavior of the system, yet we derive results about physical fluctuations and symmetries of kinetic coefficients! These must come from additional non-trivial assumptions.</p>
+<p>And how good is this estimate you ask? To answer that, we need to compute the expectation value of the variance of the variance, which leads to a four-point correlation! This hierarchy is treacherous mathematical territory, but leads one to appreciate the <em>Ergodic problem of probability</em>. Equating time averages with expectation values is highly non-trivial. The above derivation sheds light on why some fluctuation based results from statistical mechanics make sense, like the Onsager reciprocal relations and the Fluctuation Dissipation Theorem. These have been shown to yield very good agreement with experiment, a reflection of propagating sufficient information via the partition function and also taking time averages over a sufficiently long duration. It is surprising, and often frustrating, that a majority of researchers (and teachers) don&#39;t pay any heed to the above line of reasoning. Part of the problem stems from the prevalent view that probabilities of occurrence are actually frequencies of occurrence. This is, in my opinion and many others, a terribly misinformed view. Nature is not inherently random. If classical and quantum mechanics has taught us anything, it is that these systems are fundamentally deterministic, and that Nature will do whatever it is doing. It is our ignorance in following the detailed motions, the various degrees of freedom, that forces us to resort to probabilistic descriptions. The probabilities we derive in equilibrium statistical mechanics do not take into account the temporal behavior of the system, yet we&#39;re shown results about physical fluctuations and symmetries of kinetic coefficients in the same breath!</p>
 
-<p>References:</p>
+<h1>Onsager&#39;s reasoning</h1>
 
-<p>[^1] Reading Jaynes&#39; <a href="https://books.google.se/books/about/Probability_Theory.html?id=tTN4HuUNXjgC&amp;redir_esc=y"><em>Probability Theory: Logic of Science</em></a> is an intellectual adventure deserved to be experienced by everyone. Not just people in Science. Everyone.</p>
+<p>So we have <em>some</em> basis for equating expectation values with time averages, and thus physical fluctuations with probabilistic variances, remembering all the while that correlations need to decay rapidly enough for &quot;long-time&quot; averages to make sense. Even though Onsager doesn&#39;t mention any of this, let us quickly summarize his derivation of the famous reciprocal relations (I&#39;ll use symbols from the <a href="https://en.wikipedia.org/wiki/Course_of_Theoretical_Physics">Landafshitz</a> course). First, we acknowledge Boltzmann&#39;s monumental contribution:</p>
 
-<p>[^2]Jaynes, E. T., <a href="http://bayes.wustl.edu/etj/node1.html"><em>Where do we Stand on Maximum Entropy?</em></a>, 1979</p>
+<p>$$ S = k\ log(\Gamma) $$</p>
+
+<p>Entropy is the logarithm of the number of microstates a system could be in for a given macrostate <em>at equilibrium</em>. Therefore the probability of the system being in a macrostate that is different from equilibrium is given by</p>
+
+<p>$$ w(x_1,x_2,...,x_n)dx=Ae^{S_e - S(x_1,x_2,...,x_n) }dx $$</p>
+
+<p>Here, the \(x\)&#39;s are parameters defining some macrostate that the entropy depends on. Since we&#39;re exploring states close to equilibrium, we can expand \(S\) in powers of the \(x\)&#39;s about the equilibrium entropy \(S_e\). Upto the second derivative, we have, in index notation (repeated indices imply sums, \(\delta\)&#39;s are Kronecker):</p>
+
+<p>$$ w=Ae^{-{\frac{1}{2}\beta_{ik}x_ix_k}} $$</p>
+
+<p>Equating the integral of the above distribution over all parameters to one gives \(A=\sqrt{\beta}(2\pi)^{-\frac{1}{2}n}\), where \(\beta\) is the determinant of \(\beta_{ik}\). Note that here, we have considered the expectation value of \(x\)&#39;s as 0, so you can think of them as perturbations from their equilibrium values. </p>
+
+<p>By defining what we&#39;ll call <em>conjugate variables</em>, given by</p>
+
+<p>$$ X_i = -\frac{\partial S}{\partial x_i} = \beta_{ik} x_k $$</p>
+
+<p>we have,</p>
+
+<p>$$ \langle x_i X_k \rangle = \delta_{ik} $$</p>
+
+<p>$$ \langle x_i x_k \rangle = \beta_{ik}^{-1} $$</p>
+
+<p>$$ \langle X_i X_k \rangle = \beta_{ik} \ \ \ \ \ \ \color{white}{(e.3)}$$</p>
+
+<p>The covariance of the conjugate variables is symmetric with respect to the indices \(i\) and \(j\) by virtue of the definition of the covariance matrix \(\beta_{ik}\); it comprises second derivatives of the entropy. So our first obvious symmetry is </p>
+
+<p>$$ \beta_{ik} = \beta_{ki} \ \ \ \ \ \ \color{white}{(s.1)}  $$</p>
+
+<p>Having derived the probability distributions for the likelihoods of various quantities (or rather the likelihoods of their deviations from equilibrium), Onsager now asks us to mentally picture <em>actually</em> perturbing a system from equilibrium. This &quot;small&quot; perturbation induces the system to drive itself back to equilibrium. <em>The rate of change of the deviations of the macroscopic quantities from their equilibrium values, is postulated to have the phenomenological form</em>,</p>
+
+<p>$$ \dot{x_i} = -\lambda_{ik}x_k $$</p>
+
+<p>or, since we&#39;ve defined those conjugate variables,</p>
+
+<p>$$ \dot{x_i} = -\gamma_{ik}X_k \ \ \ \ \ \ \color{white}{(e.4)}$$</p>
+
+<p>This \(\gamma\) matrix comprises Onsager&#39;s phenomenological <em>kinetic coefficients</em>. It turns out this matrix is symmetric (that&#39;s the reciprocity!). The implication is that processes approaching equilibrium exhibit a symmetric coupling; for example, if the diffusion of mass transfers heat, the diffusion of heat transfers mass. </p>
+
+<p>The perturbation from equilibrium causes correlations, \(\langle x_i(t)x_k(t+\tau)\rangle\) to be finite over some relaxation time (recall the discussion about \(K(\tau)\)).</p>
+
+<p>Now, Onsager invokes the assumption of <em>microscopic reversibility</em>. In the time integral \(\langle x_i(t)x_k(t+\tau) \rangle\) (remember that expectation values have been equated with time averages), \(x_i\) is positioned to take place first followed by \(x_k\) at a later time \(\tau\). If all the microscopic trajectories contributing to this integral are symmetric in time (as the laws of classical and quantum mechanics would have it), the relative times at which \(x_i\) and \(x_k\) are positioned in the integral wouldn&#39;t matter. Therefore, our second symmetry is </p>
+
+<p>$$ \langle x_i(t)x_k(t+\tau) \rangle = \langle x_i(t+\tau)x_k(t)\rangle \ \ \ \ \ \ \color{white}{(s.2)}$$</p>
+
+<p>(Be apprised that this does not hold if magnetic fields or centripetal forces are present; they don&#39;t reverse direction when time reverses.) Taking derivatives on both sides with respect to \(\tau\) and taking \(\tau\to 0\) gives</p>
+
+<p>$$ \langle x_i\dot{x_k} \rangle = \langle \dot{x_i}x_k\rangle $$</p>
+
+<p>We can substitute \((e.4)\) in the above:</p>
+
+<p>$$ \langle x_i\gamma_{kl}X_l \rangle = \langle \gamma_{il}X_lx_k\rangle $$</p>
+
+<p>The relationships (e.3) now come in handy since,</p>
+
+<p>$$ \langle \gamma_{kl}x_iX_l \rangle = \langle \gamma_{il}X_lx_k\rangle $$
+$$ \gamma_{kl}\delta_{il} = \gamma_{il}\delta_{lk} $$
+$$ \gamma_{ki} = \gamma_{ik} \ \ \ \ \ \ \color{white}{(s.3)}$$</p>
+
+<p>That last equality is Onsager&#39;s famous reciprocity relation.</p>
+
+<p>This derivation, as reasonable looking as it is, doesn&#39;t indicate the range of applicability, let alone masking a great deal of non-trivial dynamics by equating expectation values with time averages. The need for introducing phenomenological relations while in the midst of propagating information via probability distributions further embitters any taste. To me, what is most unsettling about it is that entropy, a quantity that is very well defined at equilibrium (by ennumerating all the microstates subject to the experimental constraints), is now seen to <em>evolve</em> in time <em>outside of equilibrium</em>! It is possible for a system to take multiple microscopic paths to equilibrium, which the standard definition of entropy says nothing about. Shouldn&#39;t such motions be accounted for in any non-equilibrium description? Herein lies the greatest conceptual controversy/confusion in all of statistical mechanics: Irreversibility and the Second Law of Thermodynamics. Jaynes spent a lifetime demystifying much of this and has left us with a great deal of wisdom on how to articulate and resolve such problems. I will share my notes from studying his works in a future article. </p>
+
+<h1>Footnotes</h1>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>Reading Jaynes&#39; <a href="https://books.google.se/books/about/Probability_Theory.html?id=tTN4HuUNXjgC&amp;redir_esc=y"><em>Probability Theory: Logic of Science</em></a> is an intellectual adventure deserved to be experienced by everyone. Not just people in Science. Everyone.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>Jaynes, E. T., 1979, <a href="http://bayes.wustl.edu/etj/node1.html"><em>Where do we Stand on Maximum Entropy?</em></a>.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>The covariance function \(K(\tau)\), the way we&#39;ve derived it, is a combination of expectation values. It is common practice to replace these expectation values with time averages and call \(K(\tau)\) the <em>correlation function</em>. The replacement of expectation values with time averages and vice versa is an assumption called the <em>Ergodic Hypothesis</em>. Once this is done, one can relate the correlation function to spectral densities using the <a href="https://en.wikipedia.org/wiki/Wiener%E2%80%93Khinchin_theorem">Wiener-Khinchin theorem</a> and then proceed to derive dynamical things relating to relaxation phenomena, like the famous <a href="https://en.wikipedia.org/wiki/Fluctuation_dissipation_theorem"><em>Fluctuation-Dissipation theorem</em></a> for instance. The FD Theorem, first articulated by Einstein, is a statement about how the very &quot;random&quot; forces that cause the fluctuation of a quantity, also results in damping that quantity. For a simple introduction, read the first chapter of <em>Zwanzig, R., 2001. Nonequilibrium statistical mechanics. Oxford University Press, USA.</em> As tempting as it is to equate time averages with expectation values, it must be kept in mind that in doing so, we are - inadvertently at least - imposing upon Nature non-trivial dynamical behavior that simply stems from our ignorance of the underlying complexities. Many Physicists seem completely ok with Ergodicity. To quote the great Kip Thorne from his lecture notes on random processes, where he confines all discussions to ergodic phenomena, <em>&quot;This (ergodic hypothesis), in principle, is a severe restriction. In practice, for a physicist, it is not severe at all. In physics one&#39;s objective, when defining random variables that last forever and when introducing ensembles, is usually to acquire computational techniques for dealing with a single, or a small number of random variables \(y(t)\), studied over finite lengths of time; and one acquires those techniques by defining one&#39;s conceptual infinite-duration random variables and ensembles in such a way that they satisfy the ergodic hypothesis.&quot;</em> This to me is a bit too convenient and requires better justification. The current discussion aims at quantifying the degree of correctness of such an assumption.&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
 
 </div>
 <script type="text/javascript"
