@@ -78,7 +78,7 @@ $$                 = \frac{1}{T^2}\int\_{-T}^{T}(T-\tau)K(\tau)d\tau $$
 Since \\(K(\tau)\\) is symmetric in \\(\tau\\),
 $$  \Delta^2\bar{f} = \frac{2}{T^2}\int\_{0}^{T}(T-\tau)K(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.1)}$$
 
-It is insufficient to claim that the variance of \\(\bar{f}\\) gets better as \\(T\to\infty\\). For that to be true, we need the integrals \\(\int\_{0}^{\infty}K(\tau)d\tau\\) and \\(\int\_{0}^{\infty}\tau K(\tau\)d\tau\\) to converge. Therefore, if correlations persist for a long time, we cannot make a reliable estimate of the time average! That simply means we need to supplement our probabilities with more information. 
+It is insufficient to claim that the variance of \\(\bar{f}\\) gets better as \\(T\to\infty\\). For that to be true, we need the integrals \\(\int\_{0}^{\infty}K(\tau)d\tau\\) and \\(\int\_{0}^{\infty}\tau K(\tau\)d\tau\\) to converge. Therefore, if correlations persist for a long time, we cannot make a reliable estimate of the time average! That simply means we need to supplement our probabilities with more relevant information. 
 
 What about measurable fluctuations? The root-mean-square fluctuation of a quantity \\(f\\) is given by
 
