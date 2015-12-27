@@ -41,7 +41,7 @@ $$ \Delta^2\bar{f} = \langle\  (\bar{f} - \langle\bar{f}\rangle)^2\  \rangle $$
 $$ 		   = \langle\  (\bar{f} - \langle\bar{f}\rangle) (\bar{f} - \langle\bar{f}\rangle)\rangle $$
 $$ 		   = \frac{1}{T^2} \left\langle\ \int\_{0}^T(f(t\_1)-\langle f(t\_1) \rangle)dt\_1 \int\_{0}^T(f(t\_2)-\langle f(t\_2) \rangle)dt\_2\right \rangle $$
 
-$$ 		   = \frac{1}{T^2} \left\langle\ \int\_{0}^T\int\_{0}^T(f(t\_1)f(t\_2)-f(t\_1)\langle f(t\_2) \rangle - f(t\_2)\langle f(t\_1) + \langle f(t\_1) \rangle \langle f(t\_2) \rangle)dt\_1dt\_2  \right\rangle $$
+$$ 		   = \frac{1}{T^2} \left\langle\ \int\_{0}^T\int\_{0}^T(f(t\_1)f(t\_2)-f(t\_1)\langle f(t\_2) \rangle - f(t\_2)\langle f(t\_1)\rangle + \langle f(t\_1) \rangle \langle f(t\_2) \rangle)dt\_1dt\_2  \right\rangle $$
 $$ 		   = \frac{1}{T^2} \int\_{0}^T\int\_{0}^T(\langle f(t\_1)f(t\_2)\rangle - \langle f(t\_1) \rangle \langle f(t\_2) \rangle)dt\_1dt\_2  $$
 
 The integrand is a function of times \\(t\_1\\) and \\(t\_2\\). But, if the system is in a stationary state, then the itegrand, which we call the covariance function, is a function only of the time difference \\(\tau = t\_2 - t\_1\\).
@@ -97,7 +97,7 @@ Why have we converted this single integral into a double integral? You'll soon s
 
 $$ \langle \delta^2 f \rangle = \frac{1}{T^2}\int\_{0}^{T}\int\_{0}^{T}(\langle f(t\_1)^2 \rangle - \langle f(t\_1)f(t\_2) \rangle)dt\_1dt\_2 $$
 
-Since we're discussing stationary processes, We'll convert this double integral to a single integral using the same change of variables we did earlier. The expectation value of the RMS fluctuation is thus
+Since we're discussing stationary processes, we'll convert this double integral to a single integral using the same change of variables we did earlier. The expectation value of the RMS fluctuation is thus
 
 $$ \langle \delta^2 f \rangle = \frac{2}{T^2}\int\_{0}^{T}(T-\tau)G(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.2)}$$
 
