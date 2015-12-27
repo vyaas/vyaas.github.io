@@ -46,8 +46,8 @@ $$ 		   = \frac{1}{T^2} \int\_{0}^T\int\_{0}^T(\langle f(t\_1)f(t\_2)\rangle - \
 
 The integrand is a function of times \\(t\_1\\) and \\(t\_2\\). But, if the system is in a stationary state, then the itegrand, which we call the covariance function, is a function only of the time difference \\(\tau = t\_2 - t\_1\\).
 
-$$ K(\tau) = \langle f(t)f(t+\tau) \rangle + \langle f(t) \rangle \langle f(t+\tau) \rangle $$
-$$         = \langle f(0)f(\tau) \rangle + \langle f \rangle^2  $$
+$$ K(\tau) = \langle f(t)f(t+\tau) \rangle - \langle f(t) \rangle \langle f(t+\tau) \rangle $$
+$$         = \langle f(0)f(\tau) \rangle - \langle f \rangle^2  $$
 
 We should therefore be able to reduce the double integral to a single integral. We do this by changing the variables of integration. Let us define two new variables
 
@@ -107,7 +107,7 @@ $$ G(\tau) = \langle f^2 \rangle - \langle f(0)f(\tau) \rangle $$
 assuming a stationary process. Note the difference between \\(G(\tau)\\) and \\(K(\tau)\\). The latter contains the square of the expectation value while the former contains the expectation value of the square. We know that the difference between these gives us the variance! We can exploit this by rewriting \\((e.1) \\) as follows:
 
 
-$$  \Delta^2\bar{f} = \frac{2}{T^2}\int\_{0}^{T}(T-\tau) (\langle f(0)f(\tau) \rangle + \langle f \rangle^2) d\tau $$
+$$  \Delta^2\bar{f} = \frac{2}{T^2}\int\_{0}^{T}(T-\tau) (\langle f(0)f(\tau) \rangle - \langle f \rangle^2) d\tau $$
 
 Rearrange this to get 
 
@@ -115,7 +115,7 @@ $$ \frac{2}{T^2}\int\_{0}^{T}(T-\tau)\langle f(0)f(\tau\) \rangle d\tau = \Delta
 
 
 We can similarly rearrange \\((e.2)\\) to get 
-$$ \frac{2}{T^2}\int\_{0}^{T}(T-\tau)\langle f(0)f(\tau\) \rangle d\tau = \langle f \rangle^2  - \langle \delta^2 f \rangle $$
+$$ \frac{2}{T^2}\int\_{0}^{T}(T-\tau)\langle f(0)f(\tau\) \rangle d\tau = \langle f^2 \rangle  - \langle \delta^2 f \rangle $$
 
 We therefore have, quite amazingly,
 
