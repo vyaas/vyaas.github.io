@@ -3,7 +3,9 @@ layout: page
 title:  "Frustration with Fluctuations"
 ---
 
-The following is a simple, yet radically important point made by [E.T. Jaynes](http://bayes.wustl.edu/). 
+Studying statistical mechanics has always been a source of pleasure for me, but some of its conceptual hurdles have proven to be quite painful. I hope to convey this struggle in a series of posts starting with this one.
+
+The following is a simple, yet radically important point made by [E.T. Jaynes](http://bayes.wustl.edu/). I hope I haven't butchered any of the nuances.
 
 When a physical occurrence appears too complicated to understand, we assign to it a probability of happening, based on all the available information we have. These probability distributions are, as Jaynes has put it, carriers of information. They are epistemological things, i.e. they are founded on what we know. For instance, the _expectation value_ of a quantity \\(f\\) relevant to some phenonmenon is given by
 
@@ -135,7 +137,7 @@ Entropy \\((S)\\) is the logarithm of the number of microstates \\((\Gamma)\\) a
 
 $$ w(x\_1,x\_2,...,x\_n)dx=Ae^{S\_e - S(x\_1,x\_2,...,x\_n) }dx $$
 
-Here, the \\(x\\)'s are parameters defining some macrostate that the entropy depends on. Since we're exploring states close to equilibrium, we can expand \\(S\\) in powers of the \\(x\\)'s about the equilibrium entropy \\(S\_e\\). Upto the second derivative, we have, in index notation (repeated indices imply sums, \\(\delta\\)'s are Kronecker):
+Here, the \\(x\\)'s are parameters defining some macrostate that the _away-from-equilibrium_ entropy depends on[^4]. Since we're exploring states close to equilibrium, we can expand \\(S\\) in powers of the \\(x\\)'s about the equilibrium entropy \\(S\_e\\). Upto the second derivative, we have, in index notation (repeated indices imply sums, \\(\delta\\)'s are Kronecker):
 
 $$ w=Ae^{-{\frac{1}{2}\beta\_{ik}x\_ix\_k}} $$
 
@@ -199,3 +201,4 @@ This derivation, as reasonable looking as it is, doesn't indicate the range of a
 
 [^3]: The covariance function \\(K(\tau)\\), the way we've derived it, is a combination of expectation values. It is common practice to replace these expectation values with time averages and call \\(K(\tau)\\) the _correlation function_. The replacement of expectation values with time averages and vice versa is an assumption called the _Ergodic Hypothesis_. Once this is done, one can relate the correlation function to spectral densities using the [Wiener-Khinchin theorem](https://en.wikipedia.org/wiki/Wiener%E2%80%93Khinchin_theorem) and then proceed to derive dynamical things relating to relaxation phenomena, like the famous [_Fluctuation-Dissipation theorem_](https://en.wikipedia.org/wiki/Fluctuation_dissipation_theorem) for instance. The FD Theorem, first articulated by Einstein, is a statement about how the very "random" forces that cause the fluctuation of a quantity, also results in damping that quantity. For a simple introduction, read the first chapter of _Zwanzig, R., 2001. Nonequilibrium statistical mechanics. Oxford University Press, USA._ As tempting as it is to equate time averages with expectation values, it must be kept in mind that in doing so, we are - inadvertently at least - imposing upon Nature non-trivial dynamical behavior that simply stems from our ignorance of the underlying complexities. Many Physicists seem completely ok with Ergodicity. To quote the great Kip Thorne from his lecture notes on random processes, where he confines all discussions to ergodic phenomena, _"This (ergodic hypothesis), in principle, is a severe restriction. In practice, for a physicist, it is not severe at all. In physics one's objective, when defining random variables that last forever and when introducing ensembles, is usually to acquire computational techniques for dealing with a single, or a small number of random variables \\(y(t)\\), studied over finite lengths of time; and one acquires those techniques by defining one's conceptual infinite-duration random variables and ensembles in such a way that they satisfy the ergodic hypothesis."_ This to me is a bit too convenient and requires better justification. The current discussion aims at quantifying the degree of correctness of such an assumption.
 
+[^4]: _Away-from-equilibrium_ entropy is a baffling concept to me. On the one hand, we can assume _partial equilibrium_ and equate the perturbed entropy to the equilibrium value corresponding to perturbed \\(x\_i\\)'s. On the other hand, the state of the system (and therefore its supposed microstates) are changing in time and this information is nowhere considered while calculating the entropy using the principles of Statistical Mechanics. This difficulty is hardly ever acknowledged in textbooks where it is often simply postulated that entropy is a function of time.
