@@ -147,7 +147,7 @@ By defining what we'll call _conjugate variables_, given by
 
 $$ X\_i = -\frac{\partial S}{\partial x\_i} = \beta\_{ik} x\_k $$
 
-we have,
+, and using the probability distribution \\(w\\), we can calculate the following expectation values:
 
 $$ \langle x\_i X\_k \rangle = \delta\_{ik} $$
 

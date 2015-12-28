@@ -147,7 +147,7 @@ By defining what we'll call _conjugate variables_, given by
 
 $$ X\_i = -\frac{\partial S}{\partial x\_i} = \beta\_{ik} x\_k $$
 
-we have,
+, and using the probability distribution \\(w\\), we can calculate the following expectation values:
 
 $$ \langle x\_i X\_k \rangle = \delta\_{ik} $$
 
@@ -159,7 +159,7 @@ The covariance of the conjugate variables is symmetric with respect to the indic
 
 $$ \beta\_{ik} = \beta\_{ki} \ \ \ \ \ \ \color{white}{(s.1)}  $$
 
-Having derived the probability distributions for the likelihoods of various quantities (or rather the likelihoods of their deviations from equilibrium), Onsager now asks us to mentally picture _actually_ perturbing a system from equilibrium. This "small" perturbation induces the system to drive itself back to equilibrium. _The rate of change of the deviations of the macroscopic quantities from their equilibrium values, is postulated to have the phenomenological form_,
+Having derived the probability distributions for the likelihoods of various quantities (or rather the likelihoods of their deviations from equilibrium), Onsager now asks us to mentally picture _actually_ perturbing a system from equilibrium, thus introducing _time_. This "small" perturbation induces the system to drive itself back to equilibrium. _The rate of change of the deviations of the macroscopic quantities from their equilibrium values, is postulated to have the phenomenological form_,
 
 $$ \dot{x\_i} = -\lambda\_{ik}x\_k $$
 
