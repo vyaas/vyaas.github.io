@@ -129,9 +129,9 @@ And how good is this estimate you ask? To answer that, we need to compute the ex
 
 So we have _some_ basis for equating expectation values with time averages, and thus physical fluctuations with probabilistic variances, remembering all the while that correlations need to decay rapidly enough for "long-time" averages to make sense. Even though Onsager doesn't mention any of this, let us quickly summarize his derivation of the famous reciprocal relations (I'll use symbols from the [Landafshitz](https://en.wikipedia.org/wiki/Course_of_Theoretical_Physics) course). First, we acknowledge Boltzmann's monumental contribution:
 
-$$ S = k\ log(\Gamma) $$
+$$ S = log(\Gamma) $$
 
-Entropy is the logarithm of the number of microstates a system could be in for a given macrostate _at equilibrium_. Therefore the probability of the system being in a macrostate that is different from equilibrium is given by
+Entropy \\((S)\\) is the logarithm of the number of microstates \\((\Gamma)\\) a system could be in for a given macrostate _at equilibrium_. Therefore the probability of the system being in a macrostate that is different from equilibrium is given by
 
 $$ w(x\_1,x\_2,...,x\_n)dx=Ae^{S\_e - S(x\_1,x\_2,...,x\_n) }dx $$
 
@@ -169,7 +169,7 @@ This \\(\gamma\\) matrix comprises Onsager's phenomenological _kinetic coefficie
 
 The perturbation from equilibrium causes correlations, \\(\langle x\_i(t)x\_k(t+\tau)\rangle\\) to be finite over some relaxation time (recall the discussion about \\(K(\tau)\\)).
 
-Now, Onsager invokes the assumption of _microscopic reversibility_. In the time integral \\(\langle x\_i(t)x\_k(t+\tau) \rangle\\) (remember that expectation values have been equated with time averages), \\(x\_i\\) is positioned to take place first followed by \\(x\_k\\) at a later time \\(\tau\\). If all the microscopic trajectories contributing to this integral are symmetric in time (as the laws of classical and quantum mechanics would have it), the relative times at which \\(x\_i\\) and \\(x\_k\\) are positioned in the integral wouldn't matter. Therefore, our second symmetry is 
+Onsager then invokes the assumption of _microscopic reversibility_. In the time integral \\(\langle x\_i(t)x\_k(t+\tau) \rangle\\) (remember that expectation values have been equated with time averages), \\(x\_i\\) is positioned to take place first followed by \\(x\_k\\) at a later time \\(\tau\\). If all the microscopic trajectories contributing to this integral are symmetric in time (as the laws of classical and quantum mechanics would have it), the relative times at which \\(x\_i\\) and \\(x\_k\\) are positioned in the integral wouldn't matter. Therefore, our second symmetry is 
 
 $$ \langle x\_i(t)x\_k(t+\tau) \rangle = \langle x\_i(t+\tau)x\_k(t)\rangle \ \ \ \ \ \ \color{white}{(s.2)}$$
 
@@ -181,7 +181,7 @@ We can substitute \\((e.4)\\) in the above:
 
 $$ \langle x\_i\gamma\_{kl}X\_l \rangle = \langle \gamma\_{il}X\_lx\_k\rangle $$
 
-The relationships (e.3) now come in handy since,
+The relationships \\((e.3)\\) now come in handy since,
 
 $$ \langle \gamma\_{kl}x\_iX\_l \rangle = \langle \gamma\_{il}X\_lx\_k\rangle $$
 $$ \gamma\_{kl}\delta\_{il} = \gamma\_{il}\delta\_{lk} $$
