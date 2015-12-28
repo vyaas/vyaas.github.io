@@ -3,7 +3,7 @@ layout: page
 title:  "Frustration with Fluctuations"
 ---
 
-Studying statistical mechanics has always been a source of pleasure for me, but some of its conceptual hurdles have proven to be quite painful. I hope to convey this struggle in a series of posts starting with this one.
+Studying statistical mechanics has always been a source of pleasure for me, but some of its conceptual hurdles have proven to be quite painful. I hope to convey this struggle in a series of sporadic posts starting with this one.
 
 The following is a simple, yet radically important point made by [E.T. Jaynes](http://bayes.wustl.edu/). I hope I haven't butchered any of the nuances.
 
