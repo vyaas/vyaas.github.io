@@ -4,7 +4,7 @@
  <title>Analytic Cravings</title>
  <link href="https://vyaas.github.io/atom.xml" rel="self"/>
  <link href="https://vyaas.github.io/"/>
- <updated>2015-12-27T09:06:44-08:00</updated>
+ <updated>2015-12-29T13:16:00-08:00</updated>
  <id>https://vyaas.github.io</id>
  <author>
    <name>Vyaas Gururajan</name>
@@ -17,7 +17,9 @@
    <link href="https://vyaas.github.io/2015/12/25/Frustration-with-Fluctuations/"/>
    <updated>2015-12-25T00:00:00-08:00</updated>
    <id>https://vyaas.github.io/2015/12/25/Frustration-with-Fluctuations</id>
-   <content type="html">&lt;p&gt;The following is a simple, yet radically important point made by &lt;a href=&quot;http://bayes.wustl.edu/&quot;&gt;E.T. Jaynes&lt;/a&gt;. &lt;/p&gt;
+   <content type="html">&lt;p&gt;Studying statistical mechanics has always been a source of pleasure for me, but some of its conceptual hurdles have proven to be quite painful. I hope to convey this struggle in a series of sporadic posts starting with this one.&lt;/p&gt;
+
+&lt;p&gt;The following is a simple, yet radically important point made by &lt;a href=&quot;http://bayes.wustl.edu/&quot;&gt;E.T. Jaynes&lt;/a&gt;. I hope I haven&amp;#39;t butchered any of the nuances.&lt;/p&gt;
 
 &lt;p&gt;When a physical occurrence appears too complicated to understand, we assign to it a probability of happening, based on all the available information we have. These probability distributions are, as Jaynes has put it, carriers of information. They are epistemological things, i.e. they are founded on what we know. For instance, the &lt;em&gt;expectation value&lt;/em&gt; of a quantity \(f\) relevant to some phenonmenon is given by&lt;/p&gt;
 
@@ -90,7 +92,7 @@ $$                 = \frac{1}{T^2}\int_{-T}^{T}(T-\tau)K(\tau)d\tau $$&lt;/p&gt;
 &lt;p&gt;Since \(K(\tau)\) is symmetric in \(\tau\),
 $$  \Delta^2\bar{f} = \frac{2}{T^2}\int_{0}^{T}(T-\tau)K(\tau)d\tau \ \ \ \ \ \ \ \ \color{white}{(e.1)}$$&lt;/p&gt;
 
-&lt;p&gt;It is insufficient to claim that the variance of \(\bar{f}\) becomes insignificantly small as \(T\to\infty\), i.e. it is not enough to say that for long averaging times, our estimate of the time average becomes precise. For that to be true, we need the integrals \(\int_{0}^{\infty}K(\tau)d\tau\) and \(\int_{0}^{\infty}\tau K(\tau)d\tau\) to converge. But if correlations persist for a long time, we cannot make a reliable estimate of the time average! &lt;/p&gt;
+&lt;p&gt;It is insufficient to claim that the variance of \(\bar{f}\) becomes insignificantly small as \(T\to\infty\), i.e. it is not enough to say that for long averaging times, our estimate of the time average becomes precise. For that to be true, we need the integrals \(\int_{0}^{\infty}K(\tau)d\tau\) and \(\int_{0}^{\infty}\tau K(\tau)d\tau\) to converge. So if correlations persist for a long time, i.e. indefinitely, we cannot make a reliable estimate of the time average! &lt;/p&gt;
 
 &lt;p&gt;What about measurable fluctuations? The root-mean-square fluctuation of a quantity \(f\) is given by&lt;/p&gt;
 
@@ -138,13 +140,13 @@ $$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle 
 
 &lt;p&gt;So we have &lt;em&gt;some&lt;/em&gt; basis for equating expectation values with time averages, and thus physical fluctuations with probabilistic variances, remembering all the while that correlations need to decay rapidly enough for &amp;quot;long-time&amp;quot; averages to make sense. Even though Onsager doesn&amp;#39;t mention any of this, let us quickly summarize his derivation of the famous reciprocal relations (I&amp;#39;ll use symbols from the &lt;a href=&quot;https://en.wikipedia.org/wiki/Course_of_Theoretical_Physics&quot;&gt;Landafshitz&lt;/a&gt; course). First, we acknowledge Boltzmann&amp;#39;s monumental contribution:&lt;/p&gt;
 
-&lt;p&gt;$$ S = k\ log(\Gamma) $$&lt;/p&gt;
+&lt;p&gt;$$ S = log(\Gamma) $$&lt;/p&gt;
 
-&lt;p&gt;Entropy is the logarithm of the number of microstates a system could be in for a given macrostate &lt;em&gt;at equilibrium&lt;/em&gt;. Therefore the probability of the system being in a macrostate that is different from equilibrium is given by&lt;/p&gt;
+&lt;p&gt;Entropy \((S)\) is the logarithm of the number of microstates \((\Gamma)\) a system could be in for a given macrostate &lt;em&gt;at equilibrium&lt;/em&gt;. Therefore the probability of the system being in a macrostate that is different from equilibrium is given by&lt;/p&gt;
 
 &lt;p&gt;$$ w(x_1,x_2,...,x_n)dx=Ae^{S_e - S(x_1,x_2,...,x_n) }dx $$&lt;/p&gt;
 
-&lt;p&gt;Here, the \(x\)&amp;#39;s are parameters defining some macrostate that the entropy depends on. Since we&amp;#39;re exploring states close to equilibrium, we can expand \(S\) in powers of the \(x\)&amp;#39;s about the equilibrium entropy \(S_e\). Upto the second derivative, we have, in index notation (repeated indices imply sums, \(\delta\)&amp;#39;s are Kronecker):&lt;/p&gt;
+&lt;p&gt;Here, the \(x\)&amp;#39;s are parameters defining some macrostate that the &lt;em&gt;away-from-equilibrium&lt;/em&gt; entropy depends on&lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. Since we&amp;#39;re exploring states close to equilibrium, we can expand \(S\) in powers of the \(x\)&amp;#39;s about the equilibrium entropy \(S_e\). Upto the second derivative, we have, in index notation (repeated indices imply sums, \(\delta\)&amp;#39;s are Kronecker):&lt;/p&gt;
 
 &lt;p&gt;$$ w=Ae^{-{\frac{1}{2}\beta_{ik}x_ix_k}} $$&lt;/p&gt;
 
@@ -154,7 +156,7 @@ $$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle 
 
 &lt;p&gt;$$ X_i = -\frac{\partial S}{\partial x_i} = \beta_{ik} x_k $$&lt;/p&gt;
 
-&lt;p&gt;we have,&lt;/p&gt;
+&lt;p&gt;, and using the probability distribution \(w\), we can calculate the following expectation values:&lt;/p&gt;
 
 &lt;p&gt;$$ \langle x_i X_k \rangle = \delta_{ik} $$&lt;/p&gt;
 
@@ -166,7 +168,7 @@ $$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle 
 
 &lt;p&gt;$$ \beta_{ik} = \beta_{ki} \ \ \ \ \ \ \color{white}{(s.1)}  $$&lt;/p&gt;
 
-&lt;p&gt;Having derived the probability distributions for the likelihoods of various quantities (or rather the likelihoods of their deviations from equilibrium), Onsager now asks us to mentally picture &lt;em&gt;actually&lt;/em&gt; perturbing a system from equilibrium. This &amp;quot;small&amp;quot; perturbation induces the system to drive itself back to equilibrium. &lt;em&gt;The rate of change of the deviations of the macroscopic quantities from their equilibrium values, is postulated to have the phenomenological form&lt;/em&gt;,&lt;/p&gt;
+&lt;p&gt;Having derived the probability distributions for the likelihoods of various quantities (or rather the likelihoods of their deviations from equilibrium), Onsager now asks us to mentally picture &lt;em&gt;actually&lt;/em&gt; perturbing a system from equilibrium, thus introducing &lt;em&gt;time&lt;/em&gt;. This &amp;quot;small&amp;quot; perturbation induces the system to drive itself back to equilibrium. &lt;em&gt;The rate of change of the deviations of the macroscopic quantities from their equilibrium values, is postulated to have the phenomenological form&lt;/em&gt;,&lt;/p&gt;
 
 &lt;p&gt;$$ \dot{x_i} = -\lambda_{ik}x_k $$&lt;/p&gt;
 
@@ -176,9 +178,9 @@ $$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle 
 
 &lt;p&gt;This \(\gamma\) matrix comprises Onsager&amp;#39;s phenomenological &lt;em&gt;kinetic coefficients&lt;/em&gt;. It turns out this matrix is symmetric (that&amp;#39;s the reciprocity!). The implication is that processes approaching equilibrium exhibit a symmetric coupling; for example, if the diffusion of mass transfers heat, the diffusion of heat transfers mass. &lt;/p&gt;
 
-&lt;p&gt;The perturbation from equilibrium causes correlations, \(\langle x_i(t)x_k(t+\tau)\rangle\) to be finite over some relaxation time (recall the discussion about \(K(\tau)\)).&lt;/p&gt;
+&lt;p&gt;Note that \((e.4)\) guarantees an exponential decay for \(x\), and consequently the correlations \(\langle x_i(t)x_k(t+\tau)\rangle\) as well (recall the discussion about \(K(\tau)\) in footnote 3).&lt;/p&gt;
 
-&lt;p&gt;Now, Onsager invokes the assumption of &lt;em&gt;microscopic reversibility&lt;/em&gt;. In the time integral \(\langle x_i(t)x_k(t+\tau) \rangle\) (remember that expectation values have been equated with time averages), \(x_i\) is positioned to take place first followed by \(x_k\) at a later time \(\tau\). If all the microscopic trajectories contributing to this integral are symmetric in time (as the laws of classical and quantum mechanics would have it), the relative times at which \(x_i\) and \(x_k\) are positioned in the integral wouldn&amp;#39;t matter. Therefore, our second symmetry is &lt;/p&gt;
+&lt;p&gt;Onsager then invokes the assumption of &lt;em&gt;microscopic reversibility&lt;/em&gt;. In the time integral \(\langle x_i(t)x_k(t+\tau) \rangle\) (remember that expectation values have been equated with time averages), \(x_i\) is positioned to take place first followed by \(x_k\) at a later time \(\tau\). If all the microscopic trajectories contributing to this integral are symmetric in time (as the laws of classical and quantum mechanics would have it), the relative times at which \(x_i\) and \(x_k\) are positioned in the integral wouldn&amp;#39;t matter. Therefore, our second symmetry is &lt;/p&gt;
 
 &lt;p&gt;$$ \langle x_i(t)x_k(t+\tau) \rangle = \langle x_i(t+\tau)x_k(t)\rangle \ \ \ \ \ \ \color{white}{(s.2)}$$&lt;/p&gt;
 
@@ -190,7 +192,7 @@ $$ \frac{2}{T^2}\int_{0}^{T}(T-\tau)\langle f(0)f(\tau) \rangle d\tau = \langle 
 
 &lt;p&gt;$$ \langle x_i\gamma_{kl}X_l \rangle = \langle \gamma_{il}X_lx_k\rangle $$&lt;/p&gt;
 
-&lt;p&gt;The relationships (e.3) now come in handy since,&lt;/p&gt;
+&lt;p&gt;The relationships \((e.3)\) now come in handy since,&lt;/p&gt;
 
 &lt;p&gt;$$ \langle \gamma_{kl}x_iX_l \rangle = \langle \gamma_{il}X_lx_k\rangle $$
 $$ \gamma_{kl}\delta_{il} = \gamma_{il}\delta_{lk} $$
@@ -215,7 +217,11 @@ $$ \gamma_{ki} = \gamma_{ik} \ \ \ \ \ \ \color{white}{(s.3)}$$&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li id=&quot;fn3&quot;&gt;
-&lt;p&gt;The covariance function \(K(\tau)\), the way we&amp;#39;ve derived it, is a combination of expectation values. It is common practice to replace these expectation values with time averages and call \(K(\tau)\) the &lt;em&gt;correlation function&lt;/em&gt;. The replacement of expectation values with time averages and vice versa is an assumption called the &lt;em&gt;Ergodic Hypothesis&lt;/em&gt;. Once this is done, one can relate the correlation function to spectral densities using the &lt;a href=&quot;https://en.wikipedia.org/wiki/Wiener%E2%80%93Khinchin_theorem&quot;&gt;Wiener-Khinchin theorem&lt;/a&gt; and then proceed to derive dynamical things relating to relaxation phenomena, like the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Fluctuation_dissipation_theorem&quot;&gt;&lt;em&gt;Fluctuation-Dissipation theorem&lt;/em&gt;&lt;/a&gt; for instance. The FD Theorem, first articulated by Einstein, is a statement about how the very &amp;quot;random&amp;quot; forces that cause the fluctuation of a quantity, also results in damping that quantity. For a simple introduction, read the first chapter of &lt;em&gt;Zwanzig, R., 2001. Nonequilibrium statistical mechanics. Oxford University Press, USA.&lt;/em&gt; As tempting as it is to equate time averages with expectation values, it must be kept in mind that in doing so, we are - inadvertently at least - imposing upon Nature non-trivial dynamical behavior that simply stems from our ignorance of the underlying complexities. Many Physicists seem completely ok with Ergodicity. To quote the great Kip Thorne from his lecture notes on random processes, where he confines all discussions to ergodic phenomena, &lt;em&gt;&amp;quot;This (ergodic hypothesis), in principle, is a severe restriction. In practice, for a physicist, it is not severe at all. In physics one&amp;#39;s objective, when defining random variables that last forever and when introducing ensembles, is usually to acquire computational techniques for dealing with a single, or a small number of random variables \(y(t)\), studied over finite lengths of time; and one acquires those techniques by defining one&amp;#39;s conceptual infinite-duration random variables and ensembles in such a way that they satisfy the ergodic hypothesis.&amp;quot;&lt;/em&gt; This to me is a bit too convenient and requires better justification. The current discussion aims at quantifying the degree of correctness of such an assumption.&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;\(K(\tau)\), is a combination of expectation values. It is common practice to replace these expectation values with time averages. We can immediately appreciate the reason for such an impulse: while \(\langle f(0)\rangle\) and \(\langle f(\tau)\rangle\) are predictions that come from equilibrium statistical mechanics, there&amp;#39;s very little we can say about \(\langle f(0) f(\tau)\rangle\) from equilibrium considerations alone. The replacement of expectation values with time averages and vice versa is an assumption called the &lt;em&gt;Ergodic Hypothesis&lt;/em&gt;. Once this is done, one can give the autocorrelation function the form \(A\langle f^2\rangle e^{-\frac{t}{\tau_r}}\) by assuming all processes are &lt;a href=&quot;https://en.wikipedia.org/wiki/Gaussian_process&quot;&gt;Gaussian&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Markov_process&quot;&gt;Markovian&lt;/a&gt;. The autocorrelation function can then be related to spectral densities using the &lt;a href=&quot;https://en.wikipedia.org/wiki/Wiener%E2%80%93Khinchin_theorem&quot;&gt;Wiener-Khinchin theorem&lt;/a&gt; after which one can derive dynamical things relating to relaxation phenomena, like the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Fluctuation_dissipation_theorem&quot;&gt;&lt;em&gt;Fluctuation-Dissipation theorem&lt;/em&gt;&lt;/a&gt; for instance. The FD Theorem, first articulated by Einstein, is a statement about how the very &amp;quot;random&amp;quot; forces that cause the fluctuation of a quantity, also results in damping that quantity. For a simple introduction, read the first chapter of &lt;em&gt;Zwanzig, R., 2001. Nonequilibrium statistical mechanics. Oxford University Press, USA.&lt;/em&gt; As tempting as it is to equate time averages with expectation values, it must be kept in mind that in doing so, we are - inadvertently at least - imposing upon Nature non-trivial dynamical behavior that stems from our ignorance of the underlying complexities. Many Physicists seem unphased by Ergodicity. To quote the great &lt;a href=&quot;https://en.wikipedia.org/wiki/Kip_Thorne&quot;&gt;Kip Thorne&lt;/a&gt; from his lecture notes on random processes, where he confines all discussions to ergodic phenomena, &lt;em&gt;&amp;quot;This (ergodic hypothesis), in principle, is a severe restriction. In practice, for a physicist, it is not severe at all. In physics one&amp;#39;s objective, when defining random variables that last forever and when introducing ensembles, is usually to acquire computational techniques for dealing with a single, or a small number of random variables \(y(t)\), studied over finite lengths of time; and one acquires those techniques by defining one&amp;#39;s conceptual infinite-duration random variables and ensembles in such a way that they satisfy the ergodic hypothesis.&amp;quot;&lt;/em&gt; Indeed, this model of reality yields amazingly useful results that have paved much of the way in high precision experimentation. But it has come at the price of mixing probability theory with &amp;quot;stochastic&amp;quot;, &amp;quot;chaotic&amp;quot;, and &amp;quot;ergodic&amp;quot; ideas. The current discussion aims at quantifying the degree of reasonableness of such assumptions.&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn4&quot;&gt;
+&lt;p&gt;&lt;em&gt;Away-from-equilibrium&lt;/em&gt; entropy is a baffling concept to me. On the one hand, we can assume &lt;em&gt;partial equilibrium&lt;/em&gt; and equate the perturbed entropy to the equilibrium value corresponding to perturbed \(x_i\)&amp;#39;s. On the other hand, the state of the system (and therefore its supposed microstates) are changing in time and this information is nowhere considered while calculating the entropy using the principles of Statistical Mechanics. This difficulty is hardly ever acknowledged in textbooks where it is often simply postulated that entropy is a function of time.&amp;nbsp;&lt;a href=&quot;#fnref4&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;/ol&gt;
@@ -394,7 +400,7 @@ $$             \frac{\partial\rho}{\partial t} + \nabla\cdot\rho\vec{u}  = 0 $$&
 
 &lt;p&gt;$$ \frac{d}{dt}\oint_{V(t)} \rho\vec{u} dV  = \oint_{V(t)} \rho\vec{f} dV + \oint_{S(t)}\vec{t_{(n)}}dS $$&lt;/p&gt;
 
-&lt;p&gt;This is not Reynolds&amp;#39; Transport Theorem! This is just Newton&amp;#39;s second law! Something important emerges immediately when it is written this way. If you shrink the volume of the continuum over which the integrals are taken down to that of an IFP, the surface integral goes to zero for a \(d^2\) vs \(d^3\) related reason. This means that the surface forces are in local equilibrium for an IFP. This is another way to say that our idealized IFPs correspond to a volume of fluid in real life whose size is so small, that the forces acting on its surface are in mechanical equilibrium. We can make use of this fact in deriving the so called &lt;em&gt;stress tensor&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This is not Reynolds&amp;#39; Transport Theorem! This is just Newton&amp;#39;s second law! Something important emerges immediately when it is written this way. If you shrink the volume of the continuum over which the integrals are taken down to that of an IFP, the volume integrals go to zero faster than the surface integral because volume scales with the length cubed whereas area scales with the length &lt;em&gt;squared&lt;/em&gt;. This means that the surface forces are &lt;em&gt;always&lt;/em&gt; in local equilibrium for an IFP. This is another way to say that our idealized IFPs correspond to a volume of fluid whose size is so small, that the forces acting on its surface are in mechanical equilibrium all the time. We can make use of this fact in deriving the so called &lt;em&gt;stress tensor&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;For the time-being, imagine a 2-dimensional square shaped IFP (because it&amp;#39;s easier to draw). If we cut this square across the diagonal, we have a nice right angled triangle with three edges. There is a force acting on each of these edges, but they must all add up to zero. If \(dl\) is the length of the hypotenuse, and \(dl_1\) and \(dl_2\) are the lengths of the perpendicular edges, and the force per unit length or &lt;em&gt;length&lt;/em&gt; stress is \(vec{t}\),&lt;/p&gt;
 
@@ -454,7 +460,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$ T_{11}\hat{n_1} + T_{12}\hat{n_2} + T_{13}\hat{n_3} $$
 $$ T_{21}\hat{n_1} + T_{22}\hat{n_2} + T_{23}\hat{n_3} $$&lt;/p&gt;
 
-&lt;p&gt;If \(T_{12}\) is not equal to \(T_{21}\), our IFP should begin to spin due to the torque set up by these imbalanced forces. Although we stated that the sum of the forces had to equal zero to assure mechanical equilibrium, that wasn&amp;#39;t entirely true; the sum of the torques need to equal zero as well! If not, our IFPs would all be spinning, infinitely fast in fact, because if even the slightest torque were set up, the moment of inertia, being zero for an IFP, would be compensated for by an infinite angular acceleration. Since we&amp;#39;re staying clear of such ridiculousness, we must insist that the torque set up by the surface forces on the IFP is zero &lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. This information is contained in the fact that the stress tensor is symmetric. This does not mean that our IFP cannot have a vorticity which is defined as \(\nabla\times\vec{u}\). Newton&amp;#39;s second law for our IFP in terms of the stress tensor looks like:&lt;/p&gt;
+&lt;p&gt;If \(T_{12}\) is not equal to \(T_{21}\), our IFP should begin to spin due to the torque set up by these imbalanced forces. When we stated that the sum of the forces had to equal zero to assure mechanical equilibrium, we were being only partially correct; the sum of the &lt;em&gt;torques&lt;/em&gt; need to equal zero as well! If not, our IFPs would all be spinning, infinitely fast in fact, because if even the slightest torque were set up, the moment of inertia, being zero for an IFP, would be compensated for by an infinite angular acceleration. Since we&amp;#39;re staying clear of such ridiculousness, we must insist that the torque set up by the surface forces on the IFP is zero &lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. This information is contained in the fact that the stress tensor is symmetric. This does not mean that our IFP cannot have a vorticity which is defined as \(\nabla\times\vec{u}\). Newton&amp;#39;s second law for our IFP in terms of the stress tensor looks like:&lt;/p&gt;
 
 &lt;p&gt;$$ \frac{d}{dt}\oint_{V(t)} \rho\vec{u} dV  = \oint_{V(t)} \rho\vec{f} dV + \oint_{S(t)}\tilde{T}\cdot\hat{n}dS $$&lt;/p&gt;
 
