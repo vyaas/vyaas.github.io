@@ -2,10 +2,10 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass article-beamer
+\textclass article
 \begin_preamble
-% We use the "Berkeley" theme with a 3.45em-wide side bar on the left
-\usetheme[left,width=3.45em]{Berkeley}
+
+\usepackage{xcolor}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -73,256 +73,244 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset Flex Bold
-status open
+\begin_layout Title
+Analytic Cravings
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Author
+About the site's writer
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+\size footnotesize
+\noun on
 Name:
-\end_layout
-
-\end_inset
-
+\size default
+\noun default
  Vyaas Gururajan
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Bold
-status open
+\align left
 
-\begin_layout Plain Layout
+\size footnotesize
+\noun on
 Occupation:
-\end_layout
-
+\size default
+\noun default
+ Perishing 
+\strikeout on
+PhD student
+\strikeout default
+ Postdoc
+\begin_inset Newline linebreak
 \end_inset
 
- Perishing PhD Student.
+
+\begin_inset Newline linebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Bold
+\align left
+
+\size footnotesize
+\noun on
+Preoccupation:
+\size default
+\noun default
+ Pondering lifestyle choices in light of the amazing descriptions of Nature
+ proffered by Boltzmann 
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Preoccupation:
+To me, contemplating the relationship of note to song, citizen to society,
+ axiom to theorem, word to poem, and all such associations, induces dilated
+ pupils and intense slackjaw.
+ In Physics - my preferred course in 
+\emph on
+feeling the Universe
+\emph default
+ - one gets to examine microscopic (part) and macroscopic (whole) theories
+ and the philosophical glue that binds them.
+ The first of such adhesives was due to 
+\begin_inset CommandInset href
+LatexCommand href
+name "Boltzmann"
+target "http://plato.stanford.edu/entries/statphys-Boltzmann/"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
- Pondering lifestyle choices in light of the amazing descriptions of Nature
- proffered by Boltzmann[^1], Einstein[^2], and Feynman[^3], the detailed
- and prophetic exposition of Capital by Karl Marx[^4], the soulful renditions
- of Jazz by Bill Evans[^5], the method of electro-shock-therapy-through-comedy
- pioneered by George Carlin[^6], the disturbing-of-comfortable-and-comforting-of
--disturbed agenda of humanistic literature exemplified by David Foster Wallace[^
-7], the Kantian directions inscribed by Richard Stallman on our collective
- moral compass[^8], and the enigmatic effectiveness and spellbinding metaphysica
-l sanctuary provided by Mathematics[^9].
+, Einstein 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Einstein was the required outsider to the box of Physics: 
 \end_layout
 
-\begin_layout Standard
-**Most troubling observation:** >**"***In a time so rich in reflection and
- so devoted to raisonnement as our own, he must be a poor creature who cannot
- advance a good ground for everything, even for what is worst and most depraved.
- Everything in the world that has become corrupt, has had good ground for
- its corruption.***"** (Hegel, *Logic*, para.
- 121)
-\end_layout
-
-\begin_layout Standard
-**Psychological ailment:** Currently succumbing to *Bullshit Induced Aphasia*,
- an apparently incurable disease wherein the subject suffers the violent
- disemboweling of his senses upon hearing the sophistry of fatalists and
- teleologists through one ear and the drone of solipsists and nihilists
- through the other, resulting in a mental state of spaz-unto-death.
- What the subject looks like on the outside can only be left to one's imaginatio
-n.
-\end_layout
-
-\begin_layout Standard
-**Rationale for site's name:** Deconstructing and abstracting (while agonizingly
- susceptible to tautologies) is pretty much 90% of how my mind invites the
- world around me _indoors_.
- It has become, rather unwittingly, a comfortable escape, like a kind of
- living room of the mind with its own fireplace, persian rugs, and coffee
- pot, where ideas enter, converse, wrestle, and often leave without cleaning
- up after themselves, all with the showmanship of the finest thespians.
- If separated from this mental resort/theater, poorly curated as it might
- be, due to social commitments or general ennui, I begin to crave it again.
- Hence, _Analytic Cravings_.
- Please note that I loathe the word _Analytic_ as it appears in the phrase
- _Web Analytics_ which refers to data collection commissioned for the purpose
- of monetizing and advertizing (two activities which no matter how charitable
- I am towards, end up leaving me feeling disgusted).
-\end_layout
-
-\begin_layout Standard
-**Favorite Theorem:**
-\end_layout
-
-\begin_layout Standard
-If the functional
-\end_layout
-
-\begin_layout Standard
-$$ J = 
-\backslash
-int_a^b L(t,q^
-\backslash
-mu,
-\backslash
-dot{q^
-\backslash
-mu})dt $$
-\end_layout
-
-\begin_layout Standard
-is an extremal, and if under the infinitesimal transformation
-\end_layout
-
-\begin_layout Standard
-$$ t' = r +
-\backslash
-epsilon
-\backslash
-tau + ..., $$ $$ q^{
-\backslash
-mu'} = q^{
-\backslash
-mu} + 
-\backslash
-epsilon
-\backslash
-zeta^
-\backslash
-mu + ...
- $$
-\end_layout
-
-\begin_layout Standard
-the functional is invariant according to the definition (following the inhomogen
-eous case) $$ L' 
-\backslash
-frac{dt'}{dt} - L = 
-\backslash
-epsilon
-\backslash
-frac{dF}{dt} + O(
-\backslash
-epsilon^s),$$ where ( s < 1 ), then the following conservation law holds:
- $$ p{
-\backslash
-_
-\backslash
-mu}
-\backslash
-zeta{^
-\backslash
-mu} - H
-\backslash
-tau - F = const.
- $$
-\end_layout
-
-\begin_layout Standard
-This is Noether's theorem, arguably the sexiest in all of Physics! In English
- words, it says this: When you can write an extremum principle, like the
- principle of least action, for some phenomenon in Nature, and if you can
- locate a symmetry, like the homogeniety of space or of time, you will arrive
- at a conservation law, like the one for momentum or for energy.
- When confronted by the thought of death, I take solace in the fact that
- I have *at least* beheld this theorem! To catch such a panoramic glimpse
- of Natural Order while remaining emotionally subdued is a goddamn challenge
- of the highest order!
-\end_layout
-
-\begin_layout Standard
-[^1]: The relationship of the note to the song, the citizen to the society,
- the cog to the machine, the axiom to the theorem, the word to the poem,
- and all such constitutions, evokes a sort of universal wonderment.
- In Physics, this tension between the part and the whole is best exemplified
- in the study of Thermodynamics.
- In it throbs a tension; that between the descriptions of part and whole,
- each of which is empirically verifiable in isolation via micro and macroscopic
- theories (often to incredible success), but their connection, which is
- necessarily grounded in probability calculus, has given rise to a gallery
- of interpretations, each with its philosophical basis and niggling discontents.
- Boltzmann pioneered this line of inquiry.
- Today, thanks to him, we are in a position to articulate the question of
- [life itself being derivable from underlying principles of Physics](https://www.
-youtube.com/watch?v=e91D5UAz-f4).
- See [Boltzmann's Work in Statistical Physics.](http://plato.stanford.edu/entries/s
-tatphys-Boltzmann/)
-\end_layout
-
-\begin_layout Standard
-[^2]: I remember being utterly captivated by Einstein's revolutionary yet
- innocent-seeming line of reasoning upon reading the following lines for
- the first time: *"If we wish to describe the motion of a material point,
- we give the values of its coordinates as functions of the time.
+\begin_layout Quotation
+If we wish to describe the motion of a material point, we give the values
+ of its coordinates as functions of the time.
  Now we must bear carefully in mind that a mathematical description of this
  kind has no physical meaning unless we are quite clear as to what we understand
- by â€œtime.â€ We have to take into account that all our judgments in which
- time plays a part are always judgments of simultaneous events.
- If, for instance, I say, â€œThat train arrives here at 7 oâ€™clock,â€ I
- mean something like this: â€œThe pointing of the small hand of my watch
- to 7 and the arrival of the train are simultaneous events.â€ It might appear
- possible to overcome all the difficulties attending the definition of â€œtimeâ€
- by substituting â€œthe position of the small hand of my watchâ€ for â€œtime.â€
+ by 
+\begin_inset Quotes eld
+\end_inset
+
+time
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We have to take into account that all our judgments in which time plays
+ a part are always judgments of 
+\emph on
+simultaneous events
+\emph default
+.
+ If, for instance, I say, 
+\begin_inset Quotes eld
+\end_inset
+
+That train arrives here at 7 o'clock I mean something like this: The pointing
+ of the small hand of my watch to 7 and the arrival of the train are simultaneou
+s events.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+It might appear possible to overcome all the difficulties attending the
+ definition of 
+\begin_inset Quotes eld
+\end_inset
+
+time
+\begin_inset Quotes erd
+\end_inset
+
+ by substituting 
+\begin_inset Quotes eld
+\end_inset
+
+the position of the small hand of my watch
+\begin_inset Quotes erd
+\end_inset
+
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+time
+\begin_inset Quotes erd
+\end_inset
+
+.
  And in fact such a definition is satisfactory when we are concerned with
  defining a time exclusively for the place where the watch is located; but
  it is no longer satisfactory when we have to connect in time series of
- events occurring at different places, or â€” what comes to the same thing
- â€” to evaluate the times of events occurring at places remote from the
- watch."* You can almost feel his presence in the living room of your mind,
- gently prodding on the chinaware atop the mantel, preparing to shatter
- all sorts of things! Note the clarity in language, an obvious reflection
- of clarity in thought.
- All understanding can happen only after the diligent disentangling of neighbori
-ng ideas.
- And let no idea be considered too sacred for this! See [Einstein, A., On
- The Electrodynamics of Moving Bodies, 1905.](http://www.fourmilab.ch/etexts/einste
-in/specrel/www/)
+ events occurring at different places, or - what comes to the same thing
+ - to evaluate the times of events occurring at places remote from the watch.
 \end_layout
 
-\begin_layout Standard
-[^3]: If Einstein destroyed the furniture of my mind's living room, Feynman
- ripped away its curtains! Every one of [his inimitable lectures on Physics](htt
-p://www.feynmanlectures.caltech.edu/) has revealed to me yet another dimension
- of Beauty in our Universe.
+\end_inset
+
+, and Feynman 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Every one of Feynman's inimitable lectures on Physics has revealed to me
+ yet another dimension of Beauty in (of?) our Universe.
  When reading him, I feel a calm enlightening.
  It's the sincerity in his voice; he always asked deceptively simple questions
- and challenged us to do the same! And just as Boltzmann's fascination with
- a problem was infectious, so too was Feynman's.
- His work in uniting Hamilton's and Jacobi's optical interpretation of Mechanics
-, and Schroedinger's and deBroglie's ideas on so called Wave mechanics,
- by showing both as a consequence of that enigmatic Principle of Least Action,
- is one of the most exciting intellectual adventures in the history of Science.
- His [Messenger Lectures](https://www.youtube.com/playlist?list=PLF96D8FFDDE4B9087
-) are a constant source of inspiration for me and countless others.
+ and challenged us to do the same! His work in uniting Hamilton's & Jacobi's
+ optical interpretation of Particle Mechanics with Schroedinger's & deBroglie's
+ ideas on Wave mechanics by showing that both were a consequence of the
+ enigmatic Principle of Least Action is one of the most exciting intellectual
+ adventures (read as raging philosophical boners) in the history of Science
+ .
+ His 
+\begin_inset CommandInset href
+LatexCommand href
+name "Messenger Lectures"
+target "https://www.youtube.com/playlist?list=PLF96D8FFDDE4B9087"
+
+\end_inset
+
+ are a constant source of inspiration to me and countless others.
 \end_layout
 
-\begin_layout Standard
-[^4]: Capitalism has managed to hermetically seal itself from critical reform.
+\end_inset
+
+, the detailed and prophetic exposition of Capital by Karl Marx 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Capitalism has managed to hermetically seal itself from critical reform.
  We live in a world where the following questions recieve more admonition
- than attention: *1) Capitalism thrives on greed.
- Then are the culturally codified cliches on the greed-evil affiliation
- legit? 2) Why do we go out of our way to protect the interests of businessmen
- by granting them intellectual property, political power, financial clemency,
- and social status as role-models while poor laborers (farmers, miners,
- fishermen, cab drivers, mechanics, carpenters, etc.) are villified for complaini
-ng, protesting, and unionizing? Has our sense of proportion taken leave
- of us? 3) If Capitalism guarantees so called booms and busts, it also guarantee
-s a never diminishing reserve army of unemployed people.
+ than attention:
+\end_layout
+
+\begin_layout Enumerate
+If Capitalism thrives on greed, are the culturally codified cliches on the
+ Greed-vil affiliation false? 
+\end_layout
+
+\begin_layout Enumerate
+Why do we go out of our way to protect the interests of businessmen by granting
+ them intellectual property, political power, financial clemency, and social
+ status as role-models while poor laborers (farmers, miners, fishermen,
+ cab drivers, mechanics, carpenters, etc.) are villified for complaining,
+ protesting, and unionizing? 
+\end_layout
+
+\begin_layout Enumerate
+If Capitalism guarantees so called booms and busts, it also guarantees a
+ never diminishing reserve army of unemployed people.
  This endows capitalists with the obscene power of deciding the minimum
  wage and ultimately the poverty line.
  Also, workers are disenfranchised; they can't own the fruits of their labor,
  the means of production, the intellectual permissions to affect change,
  etc..
- Is Capitalism simply neo-imperialism?* The general reluctance of people
- to engage seriously with these questions makes me wonder if they are prescribin
-g that bitter ignorance-is-bliss pill or simply reacting in any way fitting
- of someone who benefits from the tenets of Capitalism.
+ Is Capitalism simply a neo-imperialism?
+\end_layout
+
+\begin_layout Plain Layout
+The automatic reluctance of citizens to engage seriously with these questions
+ makes me wonder if they are prescribing an ignorance-is-bliss pill or simply
+ reacting in any way fitting of someone who benefits from the tenets of
+ Capitalism.
  In either case, the principles of equality and justice aren't permissive
  to fickle rationalizations.
  Our pursuit for Truth requires that we abandon to a large degree our longing
@@ -331,39 +319,100 @@ g that bitter ignorance-is-bliss pill or simply reacting in any way fitting
  letting our thoughts reflect our material surroundings and not the other
  way around, we will allow ourselves the objectivity to grapple with our
  current system of economy.
- It is this *materialism*, injected of course with *dialectic* i.e.
- the spotting of contradiction, its informed resolution, its resulting contradic
-tion, and so on and so on, that is the mode of inquiry in Marx's multi-volume
- Capital (The first volume can be read [here](https://www.marxists.org/archive/mar
-x/works/1867-c1/)).
+ It is this 
+\emph on
+materialism
+\emph default
+, injected with 
+\emph on
+dialectic
+\emph default
+ i.e.
+ identifying contradiction, honestly resolving it, identifying its resulting
+ contradiction, honestly resolving that and so on and so on, that is the
+ mode of inquiry in Marx's multi-volume Capital (
+\begin_inset CommandInset href
+LatexCommand href
+name "Volume I"
+target "https://www.marxists.org/archive/marx/works/1867-c1/"
+
+\end_inset
+
+).
  Marx reveals to us Capitalism's metabolism, its defense mechanisms, its
  religious institutionalization, and its apologist's weakest points.
  Maybe Communism will prove to be a tough sell (although it has never been
  realized the way Marx had outlined, not even closely), Marx's critique
  of Capitalism remains invaluable.
- I must direct a good deal of gratitude towards [David Harvey](http://www.versobo
-oks.com/books/376-a-companion-to-marx-s-capital) for making Marx accessible
- to my generation.
- (Here's a [link](https://www.youtube.com/playlist?list=PL0A7FFF28B99C1303)
- to his video lectures.)
+ I must direct a good deal of gratitude towards 
+\begin_inset CommandInset href
+LatexCommand href
+name "David Harvey"
+target "http://www.versobooks.com/books/376-a-companion-to-marx-s-capital"
+
+\end_inset
+
+ for making Marx accessible to my generation.
+ 
 \end_layout
 
-\begin_layout Standard
-[^5]: If Music is the language of the soul, Bill Evans embodied a beautiful
- soul.
- In my most emotionally tired moments, when the stretch marks of existence
- widen, I listen to the soothing [tunes](http://www.last.fm/music/Bill+Evans)
+\end_inset
+
+, the soulful renditions of Jazz by Bill Evans 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\align left
+In my most emotionally tired moments, when the stretch marks of existence
+ widen, I listen to the soothing 
+\begin_inset CommandInset href
+LatexCommand href
+name "tunes"
+target "http://www.last.fm/music/Bill+Evans"
+
+\end_inset
+
  of Bill Evans.
 \end_layout
 
-\begin_layout Standard
-[^6]: My first exposure to [George Carlin](https://georgecarlin.com/media-2/)
- made me go, "Wait! You can say that? You can *think* that?".
+\end_inset
+
+, the method of electro-shock-therapy-through-comedy pioneered by George
+ Carlin 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\align left
+Such was opacity of the bubble I was reared in, that my first exposure to
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "George Carlin"
+target "https://georgecarlin.com/media-2/"
+
+\end_inset
+
+ made me go, "Wait! You can say that? You can 
+\emph on
+think
+\emph default
+ that?".
 \end_layout
 
-\begin_layout Standard
-[^7]: " *Maybe it's the fact the most of the arts here are produced by world-wea
-ry and sophisticated older people and then consumed by younger people who
+\end_inset
+
+, the disturbing-of-comfortable-and-comforting-of-disturbed agenda of humanistic
+ literature exemplified by David Foster Wallace 
+\begin_inset Foot
+status open
+
+\begin_layout Quotation
+
+\emph on
+Maybe it's the fact the most of the arts here are produced by world-weary
+ and sophisticated older people and then consumed by younger people who
  not only consume art but study it for clues on how to be cool, hip - and
  keep in mind that, for kids and younger people, to be hip and cool is the
  same as to be admired and accepted and included and so Unalone.
@@ -379,54 +428,329 @@ ry and sophisticated older people and then consumed by younger people who
  We are shown how to fashion masks of ennui and jaded irony at a young age
  where the face is fictile enough to assume the shape of whatever it wears.
  And then it's stuck there, the weary cynicism that saves us from gooey
- sentiment and unsophisticated naivete.* " - David Foster Wallace, [Infinite
- Jest ](http://www.hachettebookgroup.com/titles/david-foster-wallace/infinite-jest
-/9780316066525/)
+ sentiment and unsophisticated naivete.
 \end_layout
 
-\begin_layout Standard
-[^8]: Most of us use computers everyday.
- We use it for communicating, shopping, banking, learning, etc.
- This is possible due to software, specifically, programs.
+\begin_layout Quotation
+- David Foster Wallace, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Infinite Jest"
+target "http://www.hachettebookgroup.com/titles/david-foster-wallace/infinite-jest/9780316066525/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, the Kantian imperatives practiced and preached by Richard Stallman re
+ computers 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Programs make hardware 
+\emph on
+do
+\emph default
+ 
+\emph on
+things
+\emph default
+.
  It is not at all batshit to assume that users should control programs and
  not the other way around.
  The syllogism goes: "if programs are written by people, and these programs
  control the user, then effectively people control users." That a computer
  can automatically download software through a backdoor without a user's
  permission, that a user cannot modify or even inspect what a program is
- *really* executing, that certain hardware refuses to work unless it is
- fed so called *proprietary* software, that a user's data is collected and
- surveyed without consent, that a software patent can secure for its owner
- the power to take away people's rights to discover and implement solutions
- to computational problems themselves (this more than anything else hurts
- me the most) are all examples of gross encroachments on our liberty.
+ 
+\emph on
+really
+\emph default
+ executing, that certain hardware refuses to work unless it is fed 
+\emph on
+proprietary
+\emph default
+ software, that a user's data is collected and surveyed without consent,
+ that a software patent can secure for its owner the power to take away
+ people's rights to discover and implement solutions to computational problems
+ themselves (this personally hurts more thant anything else) are all instances
+ of gross encroachments on our liberty.
  It is also highly undemocratic and antisocial as it disenfranchises the
- many and empowers the few.
- Free Software, Richard Stallman submits, is ethical as it empowers *all*
+ Many and empowers the Few.
+ Free Software, Richard Stallman submits, is ethical as it empowers 
+\emph on
+all
+\emph default
  users and promotes a culture of sharing.
  To say that such a world cannot exist is naked denial.
  The movement to develop, distribute, and curate free software (free as
- in *Freedom* and not free as in *free beer*), has gained critical mass!
- Stallman has inspired me, and many others, to take the challenging but
- exciting road of writing and using free software! See [The Essays of Richard
- Stallman (PDF)](https://www.gnu.org/philosophy/fsfs/rms-essays.pdf)
+ in 
+\emph on
+Freedom
+\emph default
+ and not free as in 
+\emph on
+free beer
+\emph default
+), 
+\begin_inset CommandInset href
+LatexCommand href
+name "has gained critical mass"
+target "http://www.gnu.org"
+
+\end_inset
+
+! Stallman has inspired me, and many others, to take the challenging yet
+ (hence?) exciting choice of writing and using free software! See 
+\begin_inset CommandInset href
+LatexCommand href
+name "The Essays of Richard Stallman"
+target "https://www.gnu.org/philosophy/fsfs/rms-essays.pdf"
+
+\end_inset
+
+ (PDF).
+\end_layout
+
+\end_inset
+
+, and the enigmatic effectiveness and spellbinding metaphysical sanctuary
+ provided by Mathematics 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+or 
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+name "unreasonably effective"
+target "http://www.dartmouth.edu/~matc/MathDrama/reading/Wigner.html"
+
+\end_inset
+
+
+\emph default
+ as Eugene Wigner would have it.
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[^9]: Mathematics has been our best effort in formulating a language of
- reasoning.
- That its *words* are used to describe the Natural World so effectively
- remains a poetic mystery.
- One can get carried away in this sanctuary of symbols, often forgetting
- what these symbols stand for.
- This is a trap Physicists are only too wary of.
- But quite often, we end up with mathematical statements of truth before
- understanding the meaning behind the symbols (famous examples are Maxwell's
- Equations, Heisenberg's uncertainty principle, the Second law of Thermodynamics
-).
- This is unlike any other language! Mathematics is indeed a metaphysically
- singular subject! See [Wigner, E., The Unreasonable Effectiveness of Mathematics
-, 1960.](http://www.dartmouth.edu/~matc/MathDrama/reading/Wigner.html)
+\align left
+
+\size footnotesize
+\noun on
+Most Troubling Observation:
+\size default
+\noun default
+ 
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Quotation
+\align left
+
+\emph on
+In a time so rich in reflection and so devoted to raisonnement as our own,
+ he must be a poor creature who cannot advance a good ground for everything,
+ even for what is worst and most depraved.
+ Everything in the world that has become corrupt, has had good ground for
+ its corruption.
+ 
+\emph default
+- Hegel, Logic, para.
+ 121
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+\noun on
+Psychological ailment:
+\size default
+\noun default
+ Currently succumbing to 
+\emph on
+Bullshit Induced Aphasia
+\emph default
+, an apparently incurable disease wherein the subject suffers the violent
+ disemboweling of his senses upon hearing the sophistry of fatalists and
+ teleologists through one ear and the drone of solipsists and nihilists
+ through the other, resulting in a mental state of spaz-unto-death.
+ What the subject looks like on the outside can only be left to one's imaginatio
+n.
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\size footnotesize
+\noun on
+Favorite theorem:
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\size default
+\noun default
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align left
+
+\emph on
+If the functional
+\emph default
+ 
+\begin_inset Formula 
+\[
+J=\int_{a}^{b}L(t,q^{\mu},\dot{q}^{\mu})dt
+\]
+
+\end_inset
+
+
+\emph on
+is an extremal, and if under the infinitesimal transformation
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+t'=r+\epsilon\tau+...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q^{\mu}=q^{\mu}+\epsilon\zeta^{\mu}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\emph on
+the functional is invariant according to the definition (following the inhomogen
+eous case)
+\emph default
+ 
+\begin_inset Formula 
+\[
+L'\frac{dt'}{dt}-L=\epsilon\frac{dF}{dt}+O(\epsilon^{s})
+\]
+
+\end_inset
+
+
+\emph on
+where
+\emph default
+ 
+\begin_inset Formula $s<1$
+\end_inset
+
+
+\emph on
+, then the following conservation law holds:
+\emph default
+ 
+\begin_inset Formula 
+\[
+p_{\mu}\zeta^{\mu}-H\tau-F=const.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is Noether's theorem, arguably the sexiest in all of Physics! In English
+ words, it says this: When you can write an extremum principle, as the principle
+ of least action, for some phenomenon in Nature, and if you can locate a
+ symmetry, as the homogeniety of space or of time, you will arrive at a
+ conservation law, as the one for momentum or energy.
+ When confronted by the thought of death, I take solace in the fact that
+ I have 
+\emph on
+at least
+\emph default
+ beheld this theorem! To catch such a panoramic glimpse of Natural Structure
+ while remaining emotionally subdued is a goddamn challenge of the highest
+ order!
+\end_layout
+
+\begin_layout Author
+\begin_inset CommandInset href
+LatexCommand href
+name "Home"
+target "../"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

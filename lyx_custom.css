@@ -21,8 +21,8 @@
 */
 
 body {
-	font: 120% Century Gothic, sans-serif;
-	background: #f9f9f9;
+	font: 110% Century Gothic, sans-serif;
+	*/background: #f9f9f9;*/
 	color: rgb(75,75,75);
 /*	color: black;*/
 	margin: 0;
@@ -32,7 +32,7 @@ body {
 #globalWrapper {
 	margin: 10px 5%;
 	padding: 20px;
-	background: #ffffff;
+	*/background: #ffffff;*/
 	line-height: 1.5em;
 }
 
@@ -331,11 +331,13 @@ span.number-right {
 /* Header */
 h1.title {
   	font-family: 'EB Garamond', serif;
-	font: 200% serif;
+	font: 230% serif;
 	color: rgb(178,34,34);
 	text-align: center;
 }
 h2.author {
+	font: 150% Century Gothic, sans-serif;
+	color: rgb(75,75,75);
 	text-align: center;
 }
 h2.Date {
