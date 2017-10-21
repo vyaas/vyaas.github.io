@@ -84,6 +84,8 @@ div.Indented {
 	text-align: left;
 	text-indent: 30pt;
 	margin: 0px;
+	text-align: justify;
+	text-justify: auto;
 }
 div.Indented * {
 	text-indent: 0pt;
