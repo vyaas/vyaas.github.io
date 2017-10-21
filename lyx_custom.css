@@ -31,7 +31,8 @@ body {
 
 #globalWrapper {
 	margin: 10px 5%;
-	padding: 20px;
+	padding: 10px;
+	width:700px;
 	*/background: #ffffff;*/
 	line-height: 1.5em;
 }
@@ -80,8 +81,9 @@ div.Unindented {
 	margin: 0;
 }
 div.Indented {
+	text-align: left;
 	text-indent: 30pt;
-	margin: 0;
+	margin: 0px;
 }
 div.Indented * {
 	text-indent: 0pt;
